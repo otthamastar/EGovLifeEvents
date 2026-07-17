@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+   <script src="js/javascripts.js"></script>
+</head>
+
+<body>
+
+  <div class="phone">
+    <header id="header-home" class="home-header main">
+      <div class="appbar"><button class="back" onclick="history.back()">‹</button></div>
+      <div class="gov-badge">我的E政府-GOV</div>
+      <div class="sub-title">孩子出生</div>
+    </header>
+
+    <div class="screen">
+      <div class="pad" id="app">
+        <div class="flowtop">
+          <div class="ev">孩子出生</div>
+          <div class="ct">臺北市</div>
+        </div>
+        <div class="ftools"><button class="expbtn" onclick="toggleAll(this)">展開全部</button></div>
+        <div class="acc">
+          <div class="st k-none common" >
+            <button class="sth" onclick="this.parentNode.classList.toggle('open')"><span class="snum">1</span>
+              <span class="stt"><span class="nm">取得新生兒出生證明</span></span><span class="chev">▶</span></button>
+            <div class="stb">
+              <div>由接生的醫療院所開立，是後續所有申辦的必要文件，請保存正本與影本。</div><button
+                class="trackbtn added" onclick="track(0)">✓ 已加入我的辦理清單</button>
+            </div>
+          </div>
+          <div class="st k-online central">
+            <button class="sth" onclick="this.parentNode.classList.toggle('open')"><span class="snum">2</span>
+              <span class="stt"><span class="nm">出生登記（併辦健保及生育給付）</span></span><span class="chev">▶</span></button>
+            <div class="stb">
+              <div class="rows">
+                <div class="r"><span class="k">資格</span><span>申請人為新生兒之父或母、父母皆在臺設籍之本國人、新生兒在臺出生、且僅能設於父或母同一戶。</span></div>
+                <div class="r"><span class="k">期限</span><span>出生後60日內（逾期須臨櫃並可能受罰）</span></div>
+              </div>
+              <div class="chan on">
+                <div class="lbl">線上辦理（最方便）</div>內政部戶政司網路申辦服務（自然人憑證／行動自然人憑證（TW FidO））<br><a class="btn"
+                  href="https://www.ris.gov.tw/app/portal/852" target="_blank" rel="noopener">前往線上申辦 ↗</a>
+              </div><button class="counterbtn" onclick="toggleCounter(1,this)">我要臨櫃</button>
+              <div class="chan off" id="ct1" style="display:none">
+                <div class="lbl">臨櫃／現場</div>地點：任一戶政事務所（建議戶籍地）<br>應備：出生證明書、父母身分證、戶口名簿、印章
+              </div>
+              <div class="combo">
+                <div class="l">辦出生登記時可一站式併辦下列 2 項（同一窗口／同一線上流程）</div>
+                <div class="citem">
+                  <details>
+                    <summary class="n" style="cursor:pointer;list-style:none;">① 新生兒健保加保及健保卡</summary>
+                    <div class="combo-detail">
+                      <div class="cd">隨出生登記通報自動辦理，首次製卡免費、約5-7個工作天寄達健保卡。</div>
+                      <div class="exc">
+                        <div class="l">⚠️ 下列情形無法併辦，須另外辦理：</div>
+                        <ul>
+                          <li>在國外出生、初設戶籍者：須於設籍後向投保單位申報投保並申請製卡。</li>
+                          <li>父母皆為低收入戶：辦出生登記後，須另向戶籍地鄉（鎮、市、區）公所辦理投保與健保卡。</li>
+                          <li>出生登記當日尚未決定「依父」或「依母」加保：當日無法一併通報，須事後補辦。</li>
+                          <li>欲申請「有照片」健保卡：可先通報加保，相片另於健保署系統上傳補製。</li>
+                        </ul>
+                      </div>
+                      <div class="calt">🔁 如未併辦：向投保單位（公司／公所）申報加保，或至健保署網站線上申辦。</div>
+                    </div>
+                  </details>
+                </div>
+                <div class="citem">
+                  <details>
+                    <summary class="n" style="cursor:pointer;list-style:none;">② 生育給付＋擴大生育補助（補足至每胎10萬元）</summary>
+                    <div class="combo-detail">
+                      <div class="cm" style="margin-top:0">生育給付本體＝分娩前平均月投保薪資×2個月<br>政府補足至每胎合計10萬元（雙胞胎20萬，依此類推）</div>
+                      <div class="exc">
+                        <div class="l">⚠️ 下列情形無法併辦，須另外辦理：</div>
+                        <ul>
+                          <li>胎兒死產：須另檢附證明向勞保局申請（或以e化服務系統＋MyData線上辦理）。</li>
+                          <li>被保險人無金融帳戶或帳戶遭扣押：須改以紙本向勞保局申請並開立專戶。</li>
+                          <li>外籍被保險人證號可能勾稽不到，屆時須補件或改以書面申請。</li>
+                        </ul>
+                      </div>
+                      <div class="calt">🔁 如未併辦：受僱者可由公司（投保單位）申報，或以勞保局e化服務系統線上申請。</div>
+                    </div>
+                  </details>
+                </div>
+              </div><button class="trackbtn " onclick="track(1)">＋ 加入我的辦理清單</button>
+            </div>
+          </div>
+          <div class="st k-offline local">
+            <button class="sth" onclick="this.parentNode.classList.toggle('open')"><span class="snum">3</span>
+              <span class="stt"><span class="nm">生育獎勵金</span></span><span class="chev">▶</span></button>
+            <div class="stb">
+              <div class="amount">第1名4萬元<br>第2名4.5萬元<br>第3名以上5萬元（114/9/9以後出生適用新制）</div>
+              <div class="rows">
+                <div class="r"><span class="k">資格</span><span>父或母一方自出生日前10個月至申請時連續設籍臺北市（可併計新北、基隆）；新生兒設籍本市。</span></div>
+                <div class="r"><span class="k">期限</span><span>國內出生60日內、國外出生1年內</span></div>
+              </div>
+              <div class="chan off" id="ct2">
+                <div class="lbl">臨櫃／現場</div>地點：戶籍地戶政事務所（辦出生登記時一併申請，可選匯款或悠遊付撥款）<br>應備：父或母身分證、印章、戶口名簿、受款人存摺影本
+              </div><button class="trackbtn " onclick="track(2)">＋ 加入我的辦理清單</button>
+            </div>
+          </div>
+          <div class="st k-online central">
+            <button class="sth" onclick="this.parentNode.classList.toggle('open')"><span class="snum">4</span>
+              <span class="stt"><span class="nm">未滿2歲育兒津貼</span></span><span class="chev">▶</span></button>
+            <div class="stb">
+              <div class="amount">第1名5,000元/月<br>第2名6,000元/月<br>第3名以上7,000元/月</div>
+              <div class="rows">
+                <div class="r"><span class="k">資格</span><span>父母（或監護人）與幼兒設籍我國、綜所稅稅率未達20%、未領取托育補助、未接受政府公費安置。</span></div>
+                <div class="r"><span class="k">期限</span><span>自出生登記後可提出</span></div>
+              </div>
+              <div class="chan on">
+                <div class="lbl">線上辦理（最方便）</div>衛福部社家署線上申辦連結平台（已註冊健保卡或自然人憑證／行動自然人憑證（TW FidO））<br><a class="btn"
+                  href="https://twbaby.sfaa.gov.tw/home/index" target="_blank" rel="noopener">前往線上申辦 ↗</a>
+              </div><button class="counterbtn" onclick="toggleCounter(3,this)">我要臨櫃</button>
+              <div class="chan off" id="ct3" style="display:none">
+                <div class="lbl">臨櫃／現場</div>地點：兒童戶籍所在地鄉（鎮、市、區）公所<br>應備：申請表、父母及幼兒身分證明、受款人金融機構存摺封面影本
+              </div><button class="trackbtn " onclick="track(3)">＋ 加入我的辦理清單</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav" id="nav"><a aria-current="true" onclick="location.href='index.html'"><span class="i"><svg
+            width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 11l9-8 9 8"></path>
+            <path d="M5 10v10h14V10"></path>
+          </svg></span>首頁</a><a aria-current="false"  onclick="location.href='tracker-list.html'"><span class="i"><svg width="22" height="22"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"></circle>
+            <polyline points="8 12 11 15 16 9"></polyline>
+          </svg></span>我的辦理清單</a><a aria-current="false" onclick="location.href='login.html'"><span class="i"><svg width="22"
+            height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path>
+          </svg></span>登入</a></div>
+  </div>
+</body>
+</html>

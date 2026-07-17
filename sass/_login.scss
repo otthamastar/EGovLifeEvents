@@ -1,0 +1,99 @@
+
+@import 'variables';
+// ==========================================
+// 7. 驗證與登入 (Login)
+// ==========================================
+.lwrap {
+  margin-top: 14px;
+}
+
+.lcard {
+  background: #fff;
+  border: 1px solid $border-color;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0px 5px 10px #e5aeac;
+
+  h2 {
+    font-size: 1.2rem; // 20.5px / 16
+    font-weight: 800;
+  }
+
+  p {
+    font-size: 0.9rem; // 14px / 16
+    color: $text-muted;
+    margin: 5px 0px;
+  }
+}
+
+.inp {
+ width: 100%;
+  appearance: none;
+  outline: none;
+  background: #F8FAFC;
+  border: 1.5px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 0.9375rem;
+  color: $text-title;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  
+  &::placeholder {
+    color: $text-muted;
+    font-weight: 400;
+  }
+
+  &:focus {
+    background: $white;
+    border-color: $primary-blue;
+    box-shadow: $shadow-button;
+  }
+}
+
+.mail {
+  margin-top: 14px;
+  background: #eef4fb;
+  border: 1px solid #cddcf0;
+  border-radius: 12px;
+  padding: 13px 14px;
+
+  .mh {
+    font-size: 0.9rem; // 13.5px / 16
+    font-weight: 800;
+    color: $primary-blue;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .code {
+    font-size: 1.96875rem; // 31.5px / 16
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: $primary-blue;
+    text-align: center;
+    margin: 8px 0;
+  }
+
+  .lk {
+    font-size: 1rem; // 14px / 16
+  }
+}
+
+.mutelink {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 0.9rem; // 14px / 16
+  color: $primary-blue;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  width: 100%;
+}

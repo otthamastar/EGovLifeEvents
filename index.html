@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+   <script src="js/javascripts.js"></script>
+</head>
+
+<body>
+  <div class="phone">
+    <header id="header-home" class="home-header">
+      <div class="gov-badge">我的E政府-GOV</div>
+    </header>
+    <div class="screen">
+      <div class="pad" id="app">
+        <div class="hero">
+          <h1>陪您走過<br>人生每個階段</h1>
+          <div class="hero-illustration">
+            圖示
+          </div>
+          <p>選擇您目前正在經歷的人生事件，<br>我們會帶您一站完成所有政府申辦。</p>
+        </div>
+        <div class="evgrid">
+          <a class="evcard" href="search-page.html">
+            <div class="emo">孩子出生圖示</div>
+            <div class="nm">孩子出生</div>
+            <div class="ds">報戶口・健保・生育補助</div>
+          </a>
+          <a class="evcard" href="search-page02.html">
+            <div class="emo">孩子上幼兒園圖示</div>
+            <div class="nm">孩子上幼兒園</div>
+            <div class="ds">登記・抽籤・報到・津貼</div>
+          </a>
+          <a class="evcard soon">
+            <div class="emo">結婚圖示</div>
+            <div class="nm">結婚</div>
+            <div class="ds">敬請期待</div>
+          </a>
+          <a class="evcard soon">
+            <div class="emo">創業圖示</div>
+            <div class="nm">創業</div>
+            <div class="ds">敬請期待</div>
+          </a>
+        </div>
+        <div class="homecta">
+          <div class="ic">提醒圖示</div>
+          <div class="tx">辦到一半怕忘記？<a href="#" onclick="go('login');return false;"
+              style="color:#0056b3;text-decoration:underline;font-weight:bold;">登入</a>後可<b>追蹤每項進度</b>，用 Email
+            收登入碼即可，免記密碼。</div>
+        </div>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <div class="nav" id="nav"><a aria-current="true" onclick="location.href='index.html'"><span class="i"><svg
+            width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 11l9-8 9 8"></path>
+            <path d="M5 10v10h14V10"></path>
+          </svg></span>首頁</a><a aria-current="false"  onclick="location.href='tracker-list.html'"><span class="i"><svg width="22" height="22"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"></circle>
+            <polyline points="8 12 11 15 16 9"></polyline>
+          </svg></span>我的辦理清單</a><a aria-current="false" onclick="location.href='login.html'"><span class="i"><svg width="22"
+            height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path>
+          </svg></span>登入</a></div>
+  </div>
+</body>
+</html>

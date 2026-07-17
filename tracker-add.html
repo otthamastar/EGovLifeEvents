@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <script src="js/javascripts.js"></script>
+</head>
+
+<body>
+
+  <div class="phone">
+    <header id="header-home" class="home-header main">
+      <div class="appbar"><button class="back" onclick="history.back()">‹</button></div>
+      <div class="gov-badge">我的E政府-GOV</div>
+      <div class="sub-title">我的辦理清單</div>
+    </header>
+
+    <div class="screen">
+      <div class="pad" id="app">
+        <div class="empty">還沒有追蹤項目。<br>到辦事流程裡點「＋ 加入我的辦理清單」就會出現在這裡。<br><br>
+          <button class="pbtn primary" style="max-width:180px;margin:0 auto" onclick="go('home')">開始</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav" id="nav"><a aria-current="false" onclick="location.href='index.html'"><span class="i"><svg
+            width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 11l9-8 9 8"></path>
+            <path d="M5 10v10h14V10"></path>
+          </svg></span>首頁</a><a aria-current="true" onclick="go('tracker')"><span class="i"><svg width="22" height="22"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"></circle>
+            <polyline points="8 12 11 15 16 9"></polyline>
+          </svg></span>我的辦理清單</a><a aria-current="false" onclick="location.href='login.html'"><span class="i"><svg
+            width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path>
+          </svg></span>登入</a></div>
+  </div>
+</body>
+
+</html>

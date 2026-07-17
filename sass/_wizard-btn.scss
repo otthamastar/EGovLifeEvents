@@ -1,0 +1,159 @@
+@import 'variables';
+// ==========================================
+// 5. 引導與問答元件 (Wizard)
+// ==========================================
+.qwrap {
+  margin-bottom: 15px;
+
+}
+
+.qstep {
+  font-size: 0.9rem; // 13.5px / 16
+  font-weight: 800;
+  color: $primary;
+  letter-spacing: 0.05em;
+}
+
+.qtitle {
+  font-size: 1.34375rem; // 21.5px / 16
+  font-weight: 800;
+  margin: 6px 0 8px;
+}
+
+.qsub {
+  font-size: 1rem; // 14px / 16
+  color: $text-muted;
+  margin-bottom: 14px;
+}
+
+.ctys {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.cbtn {
+  appearance: none;
+  cursor: pointer;
+  border: 1.5px solid $border-color;
+  background: #fff;
+  border-radius: 11px;
+  padding: 12px 4px;
+  font-family: inherit;
+  font-size: 1rem; // 16px / 16
+  font-weight: 700;
+  color: $dark;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &:active {
+    transform: scale(0.96);
+  }
+
+  &[aria-pressed="true"] {
+    background: $accent;
+    border-color: $accent;
+    color: #3a2f00;
+  }
+
+  .d {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    display: none;
+  }
+}
+
+.opts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.obtn {
+  appearance: none;
+  cursor: pointer;
+  text-align: left;
+  border: 1.5px solid $border-color;
+  background: #fff;
+  border-radius: 13px;
+  padding: 15px 16px;
+  font-family: inherit;
+  font-size: 1.0625rem; // 17px / 16
+  font-weight: 700;
+  color: $dark;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  .em {
+    font-size: 1.34375rem; // 21.5px / 16
+  }
+}
+
+// 線上狀態圓點/標籤背景
+.s-online  { background: $status-online-color; }
+.s-partial { background: $status-partial-color; }
+.s-offline { background: $status-offline-color; }
+
+.nextbar {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.pbtn {
+  flex: 1;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-family: inherit;
+  font-size: 1.0625rem; // 17px / 16
+  font-weight: 800;
+
+  &.primary {
+   appearance: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  background: linear-gradient(135deg, #1E40AF 0%, #1D4ED8 100%);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: linear-gradient(135deg, #1D4ED8 0%, #1E40AF 100%);
+  }
+
+  &:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 6px rgba(30, 64, 175, 0.1);
+  }
+
+    &:disabled {
+      background: #b9c2ce;
+    }
+  }
+
+  &.ghost {
+    background: #fff;
+    border: 1.5px solid $border-color;
+    color: $primary;
+    flex: none;
+    width: 64px;
+  }
+}

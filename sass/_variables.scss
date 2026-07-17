@@ -1,0 +1,67 @@
+// ==========================================
+// 1. 變數宣告 (Variables)
+// ==========================================
+// 色彩系統
+$white: #ffffff;
+$primary: #12a2a8;
+$secondary: #a12b5e;
+$accent: #FFC000;
+$dark: #2b2b2b;
+$dark-text: #1a2533;       // 調深主文字，使其更有重量感
+$text-muted: #424852;
+$text-light: #6b6b66;
+$top-bg:#fce3e1;
+$bottom-bg:#ffcdcd;
+$text-title: #0F172A;   // 極深石墨藍，更有權威與安全感
+$text-body: #475569;    // 溫和的中灰
+$primary-blue: #1E40AF;
+
+// 狀態色彩
+$status-online-bg: #e6f3df;
+$status-online-color: #4e9c3a;
+$status-partial-color: #0c9c92;
+$status-offline-bg: #fff4f2;
+$status-offline-color: #e0553d;
+$status-warning-bg: #fff3d6;
+$status-warning-color: #8a6a00;
+
+// 精緻化狀態色彩 (調低飽和度，加入果凍透明感底色)
+$online-bg: rgba(240, 251, 253, 0.85);
+$online-border: rgba(74, 205, 222, 0.4);
+$online-text: #165365;
+
+$warning-bg: rgba(254, 243, 199, 0.5);
+$warning-border: rgba(251, 191, 36, 0.4);
+$warning-text: #B45309;
+
+$offline-bg: rgba(254, 242, 242, 0.9);
+$offline-border: rgba(252, 165, 165, 0.4);
+$offline-text: #991B1B;
+$primary-gradient: linear-gradient(135deg, #009ca3 0%, #ffe9e9 100%);
+
+// 狀態按鈕專屬色 (微透光果凍色系)
+$color-todo-bg: #F1F5F9;
+$color-todo-text: #475569;
+
+$color-doing-bg: #EFF6FF;
+$color-doing-border: rgba(59, 130, 246, 0.2);
+$color-doing-text: #1D4ED8;
+
+$color-done-bg: #ECFDF5;
+$color-done-border: rgba(16, 185, 129, 0.2);
+$color-done-text: #047857;
+
+// 邊框與陰影
+$border-color: #e6cece;
+$shadow-main: 0 12px 32px rgba(30, 64, 175, 0.04), 0 4px 12px rgba(0, 0, 0, 0.01);
+$shadow-button: 0 6px 16px rgba(13, 148, 136, 0.25);
+
+// 字型
+$font-stack: "微軟正黑體", "PingFang TC", Arial, sans-serif;
+
+//隱藏文字的方法
+%hide-text {
+	text-indent: -9999px;
+	font: 0/0 a;
+	color: transparent;
+}

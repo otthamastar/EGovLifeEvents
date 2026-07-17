@@ -1,0 +1,514 @@
+@import 'variables';
+// ==========================================
+// 2. 全域重設 & 基礎樣式 (Global & Base)
+// ==========================================
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: $font-stack;
+  background: #ffffff;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: $dark;
+  background: linear-gradient(180deg, $top-bg, $bottom-bg);
+}
+a{
+  text-decoration:none;
+  color: inherit;
+}
+
+// 狀態提示
+.stagehint {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: $secondary;
+  font-weight: 700;
+  font-size: 0.90625rem; // 14.5px / 16
+  letter-spacing: 0.05em;
+}
+
+// ==========================================
+// 3. 手機外框 & 核心結構 (Phone Frame & Container)
+// ==========================================
+.phone {
+  max-width: 100%;
+  max-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 26px;
+    background: #10151f;
+    border-radius: 0 0 18px 18px;
+    z-index: 30;
+  }
+
+  .home-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 18px;
+    gap: 10px;
+ }
+
+ .gov-badge{
+  @extend %hide-text;
+  background: url(../images/logo.svg) no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 30px;
+
+ }
+ .main{
+      align-items: center;
+    .gov-badge{
+      background: url(../images/logo-m.svg) no-repeat center;
+      width: 30px;
+    }
+ }
+
+ .sub-title {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: $primary;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+ header {
+    flex-shrink: 0;
+    background: $white;
+    z-index: 10;
+ }
+
+  .hero{
+    padding: 20px 0px 10px;
+    position:relative;
+      h1{
+      font-size:28px;
+      line-height:1.35;
+      margin:0 0 14px;
+      font-weight:900;
+      color:var(--text-dark);
+     }
+      p{
+      font-size:13.5px;
+      line-height:1.7;
+      color:var(--text-mid);
+      margin:0;
+      max-width:78%;
+      position:relative;
+      z-index:2;
+    }
+
+  }
+ 
+  .hero-illustration{
+    @extend %hide-text;
+    position:absolute;
+    top:10px;
+    right:0px;
+    width:150px;
+    height:150px;
+    background: url(../images/header-bg.svg) no-repeat center;
+    background-size: contain;
+  }
+
+  .statusbar {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    font-size: 1rem; // 14px / 16
+    font-weight: 700;
+    color: #3a3a35;
+    flex: none;
+  }
+
+  .screen {
+    flex: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+
+  .pad {
+    padding: 15px;
+    margin-bottom: 150px;
+  }
+}
+
+// ==========================================
+// 4. 首頁與品牌元件 (Home & Brand)
+// ==========================================
+.appbar {
+    position: absolute;
+    left: 20px;
+  .back {
+    appearance: none;
+    border: none;
+    background: #fff;
+    border: 1px solid #cdcdc8;
+    border-radius: 10px;
+    width: 34px;
+    height: 34px;
+    font-size: 1.09375rem; // 17.5px / 16
+    cursor: pointer;
+    color: $primary;
+  }
+
+  .t {
+    font-size: 1.09375rem; // 17.5px / 16
+    font-weight: 800;
+    color: $primary;
+  }
+
+  .sp {
+    margin-left: auto;
+  }
+}
+
+.miniuser {
+  font-size: 0.8125rem; // 13px / 16
+  font-weight: 700;
+  color: $status-online-color;
+  background: #e6f3df;
+  border-radius: 20px;
+  padding: 3px 10px;
+
+  &.out {
+    color: $status-warning-color;
+    background: #fff3d6;
+  }
+}
+
+.brand {
+  padding: 8px 2px 2px;
+
+  .ey {
+    font-size: 0.8125rem; // 13px / 16
+    letter-spacing: 0.16em;
+    color: $primary;
+    font-weight: 800;
+  }
+
+  h1 {
+    font-size: 1.78125rem; // 28.5px / 16
+    font-weight: 900;
+    color: $dark;
+    margin-top: 4px;
+    line-height: 1.2;
+  }
+
+  .u {
+    height: 6px;
+    width: 70px;
+    background: $accent;
+    border-radius: 3px;
+    margin-top: 8px;
+  }
+
+  p {
+    margin-top: 12px;
+    color: $text-light;
+    font-size: 0.9375rem; // 15px / 16
+  }
+}
+
+// 事件卡片網格
+.evgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.evcard {
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  border: 1px solid $border-color;
+  border-radius: 18px;
+  padding: 20px 10px;
+  text-align: center;
+  transition: 0.15s;
+  box-shadow: $shadow-main;
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  .emo {
+    @extend %hide-text;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    border-radius: 100%;
+    position: relative;
+    &:before{
+      content: '';
+      display: block;
+      width: 50px;
+      height: 50px;
+      position:absolute;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      filter: brightness(100) drop-shadow(1px 1px 2px rgba(0,0,0,.3));
+      -webkit-filter: brightness(100) drop-shadow(1px 1px 2px rgba(0,0,0,.3));
+      background-size: contain !important;
+    }
+  }
+
+  .nm {
+    font-size: 1.1rem; // 18.5px / 16
+    font-weight: 800;
+    margin-top: 8px;
+  }
+
+  .ds {
+    font-size: 0.8125rem; // 13px / 16
+    color: $text-muted;
+    margin-top: 3px;
+  }
+   &:nth-child(1){
+    .emo{
+       background-color:#FFBBAE;
+      &:before{
+        background:url(../images/index-icon01.svg) no-repeat center;
+      }
+    }   
+  }
+  //  &:nth-child(2){
+  //   .emo{
+  //      background-color:#ffa368;
+  //      &:before{
+  //       background:url(../images/index-icon02-1.svg) no-repeat center;
+  //     }
+  //   }   
+  // }
+    &:nth-child(2){
+    .emo{
+       background-color:#F4BA50;
+       &:before{
+        background:url(../images/index-icon02.svg) no-repeat center;
+      }
+    }   
+  }
+    &:nth-child(3){
+    .emo{
+       background-color:#7EC9C5;
+        &:before{
+        background:url(../images/index-icon03.svg) no-repeat center;
+      }
+    }   
+  }
+   &:nth-child(4){
+    .emo{
+       background-color:#9ED7BC;
+        &:before{
+        background:url(../images/index-icon04.svg) no-repeat center;
+      }
+    }   
+  }
+}
+
+.soon {
+  opacity: 0.5;
+  &:active{
+    transform: inherit !important;
+  }
+}
+
+.homecta {
+  margin-top: 16px;
+  background: #fff;
+  border: 1px dashed #d8cfa8;
+  border-radius: 14px;
+  padding: 13px 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .ic {
+    @extend %hide-text;
+    background:url(../images/remind.svg) no-repeat center;
+    width: 100%;
+    width: 20px;
+    height: 20px;
+  }
+
+  .tx {
+    font-size: 1rem; // 14px / 16
+    color: $text-light;
+    flex: 1;
+  }
+
+  b {
+    color: $primary;
+  }
+}
+
+
+
+// ==========================================
+// 9. 彈出提示與底部導覽列 (Toast & Navigation)
+// ==========================================
+.toast {
+  position: absolute;
+  bottom: 78px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: $dark;
+  color: #fff;
+  font-size: 14.5px; // 14.5px / 16
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 22px;
+  opacity: 0;
+  transition: 0.25s;
+  z-index: 40;
+  pointer-events: none;
+  white-space: nowrap;
+
+  &.on {
+    opacity: 0.96;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.nav {
+  flex: none;
+  display: flex;
+  background: #fff;
+  border-top: 1px solid #eee;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+
+  a {
+    flex: 1;
+    appearance: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 9px 0 12px;
+    color: #9a9a90;
+    font-size: 1rem; // 12.5px / 16
+    font-weight: 700;
+    display: block;
+    text-align: center;
+
+    .i {
+      display: block;
+      margin-bottom: 1px;
+    }
+
+    &[aria-current="true"] {
+      color: $primary;
+    }
+  }
+}
+
+// ==========================================
+// 10. 詳細資訊摺疊面板 (Details / Compare)
+// ==========================================
+.cmp {
+  margin: 10px 0 2px;
+  border: 1px solid #e3ddc4;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+
+  & > summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 11px 14px;
+    font-size: 0.9375rem; // 15px / 16
+    font-weight: 800;
+    color: $primary;
+    background: #eef4fb;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  .cbody {
+    padding: 6px 14px 12px;
+  }
+}
+
+.cmp-row {
+  padding: 8px 0;
+  border-bottom: 1px dashed #eadfbc;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.cmp-face {
+  font-size: 0.9rem; // 13.5px / 16
+  font-weight: 800;
+  color: #555;
+  margin-bottom: 3px;
+}
+
+.cmp-a, .cmp-b {
+  font-size: 1rem; // 14px / 16
+  margin: 2px 0;
+  line-height: 1.5;
+}
+
+// 標籤樣式
+.tg {
+  font-weight: 800;
+  font-size: 0.75rem; // 12px / 16
+  border-radius: 5px;
+  padding: 1px 6px;
+  margin-right: 6px;
+
+  &.pub {
+    background: $status-online-bg;
+    color: $status-online-color;
+  }
+
+  &.np {
+    background: #fff3d6;
+    color: $status-warning-color;
+  }
+}
+
+.cmn {
+  font-size: 0.8125rem; // 13px / 16
+  color: #8a6a3a;
+  margin-top: 9px;
+  background: #fff8e6;
+  border-radius: 8px;
+  padding: 6px 9px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <script src="js/javascripts.js"></script>
+</head>
+
+<body>
+
+  <div class="phone">
+    <header id="header-home" class="home-header main">
+      <div class="appbar"><button class="back" onclick="history.back()">‹</button></div>
+      <div class="gov-badge">我的E政府-GOV</div>
+      <div class="sub-title">我的辦理清單</div>
+    </header>
+
+    <div class="screen">
+      <div class="pad" id="app">
+        <div class="mail-name">jilcychang@gmail.com　共 1 項</div>
+        <div class="mail-info">💡 點各項狀態可切換：未開始 → 進行中 → 已完成</div>
+        <div class="trk">
+          <div class="trkitem">
+            <a href="#">
+            <div class="ctx">孩子出生・臺北市</div>
+            <div class="ti" >取得新生兒出生證明</div></a>
+            <div class="bot"><button class="stpill stp-todo" onclick="cycle(this)">未開始</button><button class="rm" onclick="rmProg(event)" >移除</button></div>
+          </div>
+          </div>
+           <div class="trk">
+          <div class="trkitem">
+            <a href="serve-list-born-taipei.html#birth-register">
+            <div class="ctx">孩子出生・臺北市</div>
+            <div class="ti" >出生登記</div></a>
+            <div class="bot"><button class="stpill stp-todo" onclick="cycle(this)">未開始</button><button class="rm" onclick="rmProg(event)" >移除</button></div>
+          </div>
+          </div>
+           <button class="mutelink" style="margin-top:18px" onclick="logout()">登出</button>
+        </div>
+      </div>
+    </div>
+    <div class="nav" id="nav"><a aria-current="false" onclick="location.href='index.html'"><span class="i"><svg
+            width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 11l9-8 9 8"></path>
+            <path d="M5 10v10h14V10"></path>
+          </svg></span>首頁</a><a aria-current="true" onclick="go('tracker')"><span class="i"><svg width="22" height="22"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"></circle>
+            <polyline points="8 12 11 15 16 9"></polyline>
+          </svg></span>我的辦理清單</a><a aria-current="false" onclick="location.href='login.html'"><span class="i"><svg
+            width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path>
+          </svg></span>登入</a></div>
+  </div>
+</body>
+</html>

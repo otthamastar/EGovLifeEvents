@@ -1,0 +1,563 @@
+@import 'variables';
+// ==========================================
+// 6. 服務申辦流程元件 (Flow)
+// ==========================================
+.flowtop {
+  background: $primary-gradient;
+  border-radius: 24px;
+  padding: 24px;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(30, 64, 175, 0.15);
+  position: relative;
+  overflow: hidden;
+
+  // 加入微弱幾何裝飾光暈
+  &::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 50%;
+    bottom: -40px;
+    right: -30px;
+  }
+
+  .ev {
+    font-size: 0.9rem; // 13px
+    font-weight: 600;
+    opacity: 0.8;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+  }
+
+  .ct {
+    font-size: 1.6rem; // 26px
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+}
+
+.olead {
+  margin: 12px 0 2px;
+  font-size: 1rem; // 14px / 16
+  color: $status-online-color;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ftools {
+  display: flex;
+  justify-content: flex-end;
+  margin: 14px 0 10px;
+}
+
+.expbtn {
+  appearance: none;
+  cursor: pointer;
+  background: rgba(30, 64, 175, 0.06);
+  border: 1px solid rgba(30, 64, 175, 0.1);
+  color: #1F497D;
+  font-weight: 700;
+  font-size: 0.9rem; // 13px
+  border-radius: 20px;
+  padding: 6px 16px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(30, 64, 175, 0.1);
+  }
+}
+
+.acclbl {
+  font-size: 1rem; // 14px / 16
+  color: $text-muted;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.accmail {
+  font-size: 1.28125rem; // 20.5px / 16
+  font-weight: 800;
+  color: $primary;
+  background: #eef4fb;
+  border: 1px solid #d5e2f2;
+  border-radius: 11px;
+  padding: 13px 15px;
+  margin: 6px 0 14px;
+  word-break: break-all;
+}
+
+// 摺疊卡片區塊 (Acc)
+.acc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.st {
+  background: $white;
+  border-radius: 20px; // 圓潤大圓角顯得現代親切
+  box-shadow: $shadow-main;
+  border: $border-color; // 極淡邊框
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  // overflow: hidden;
+  line-height: 1.7;
+  
+  // // 移除突兀的左側粗色條，改為優雅的點綴色
+  // &.k-online  { border-left: 1px solid rgba(74, 222, 128, 0.5); }
+  // &.k-offline { border-left: 1px solid rgba(252, 165, 165, 0.5); }
+  // &.k-none    { border-left: 1px solid rgba(203, 213, 225, 0.5); }
+
+  // 展開狀態時的卡片微浮雕質感
+  &.open {
+    box-shadow: 0 16px 40px rgba(30, 64, 175, 0.06);
+
+    .stb{
+      display: block;
+    }
+    
+    .chev {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+// 卡片標頭
+.sth {
+  width: 100%;
+  appearance: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.snum {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: $primary;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1rem; // 15.5px / 16
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stt {
+  flex: 1;
+  min-width: 0;
+
+  .nm {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  .hn {
+    font-size: 0.8125rem; // 13px / 16
+    margin-top: 2px;
+  }
+}
+
+.way {
+  font-weight: 800;
+  padding: 1px 7px;
+  border-radius: 6px;
+  font-size: 1rem; 
+
+  &.on {
+    background: $status-online-bg;
+    color: $status-online-color;
+  }
+  &.off {
+    background: #faf1d8;
+    color: $status-warning-color;
+  }
+}
+
+.chev {
+  flex: none;
+  color: $text-light;
+  transition: transform 0.2s;
+  transform: rotate(-90deg);
+}
+
+// 卡片展開內容
+.stb {
+  display: none;
+  padding: 0 15px 15px;
+  font-size: 0.9rem;
+}
+
+// 金額發光提示區
+.amount {
+  background: $offline-bg;
+  border: 1px solid $offline-border;
+  border-radius: 12px;
+  padding: 12px 15px;
+  margin: 4px 0 14px;
+  font-size: 0.9rem; // 15px
+  font-weight: 600;
+  color: $offline-text;
+  line-height: 1.7;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 6px;
+}
+
+.r {
+  display: grid;
+  grid-template-columns: 65px 1fr;
+  gap: 8px;
+
+  .k {
+    color: $text-muted;
+    font-weight: 700;
+  }
+}
+
+.chan {
+ border-radius: 16px;
+  padding: 16px;
+  font-size: 0.9rem; // 14px
+  line-height: 1.7;
+  margin-top: 10px;
+
+  .lbl {
+    font-size: 0.9rem; // 12px
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+    margin-right: 8px;
+  }
+
+&.on {
+    background: $online-bg;
+    border: 1px solid $online-border;
+    color: #165365;
+    .lbl { 
+      background: #bbf7ea;
+      color: $online-text; 
+    }
+  }
+&.off {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-top: 8px;
+    border: 1px solid #bcdee2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    font-weight: normal;
+    color: $text-muted;
+
+    .lbl { 
+      background: #bbf7ea;
+      color: $warning-text; 
+    }
+  }
+}
+
+// 前往線上申辦 ↗ 主按鈕
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  background: linear-gradient(135deg, #0F766E 0%, #0D9488 100%);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem; // 15px
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: $shadow-button;
+  transition: all 0.2s ease;
+
+   &:hover{
+    background: linear-gradient(135deg, #0D9488 0%, #0F766E 100%);
+   }
+
+  &:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 6px rgba(13, 148, 136, 0.2);
+  }
+}
+
+// 我要臨櫃按鈕 (移除虛線，改成精緻琥珀黃)
+.counterbtn {
+  appearance: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 12px;
+  background:$online-bg;
+  // border: 1px solid $warning-border;
+  border: 1px solid rgba(74, 205, 222, 0.4);
+  color: $online-text;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 12px;
+  padding: 12px;
+  transition: all 0.2s ease;
+  display: block;
+
+  p{
+    text-align: center;
+  }
+
+ // 1. 預設狀態：右側小箭頭朝下 (▶ 轉向右，再轉 90 度朝下)
+  p:after {
+    content: "▶"; 
+    font-size: 0.6875rem; // 11px 稍微縮小更精緻
+    display: inline-block;
+    color: $online-text;
+    transform: rotate(-90deg); // 轉向下方
+    transition: transform 0.25s ease, opacity 0.25s ease;
+    float: right;
+    color: #6b6b66;
+  }
+
+  // 2. 被點擊打開後的狀態 (.open)
+  &.open {
+    background:$online-bg;
+    border-color: 1px solid rgba(74, 205, 222, 0.4);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.12);
+    .chan{
+      display: block !important;
+    }
+
+    // 箭頭動態旋轉朝上
+    p:after {
+      opacity: 1;
+      transform: rotate(90deg); // 流暢旋轉 180 度指向上方
+    }
+  }
+
+}
+
+// 組合套餐與細節
+.combo {
+  margin-top: 12px;
+  background: $online-bg;
+  border: 1px solid $online-border;
+  color: #0e7c73;
+  border-radius: 10px;
+  padding: 9px 11px;
+
+  .l {
+    font-size: 1rem; // 12.5px / 16
+    font-weight: 800;
+    color: $online-text;
+    border-radius: 6px;
+    padding: 3px 8px;
+    text-align: center;
+  }
+
+  .n {
+    font-weight: 700;
+    color: $dark;
+    padding: 8px 0;
+    display: flex;          // 改為 flex 佈局，讓文字和箭頭分配在兩側
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+    gap: 8px;
+    font-size: 0.95rem;
+    
+    // 隱藏 Safari 預設的箭頭
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    // 預設狀態：向下的小箭頭 (🞃)
+    &::after {
+      content: "▶";         // 使用箭頭符號，並透過旋轉來變換方向
+      font-size: 0.75rem;
+      color: $text-light;
+      transform: rotate(-90deg); // 轉向下方
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    &:hover {
+      color: #0f7a72;
+      &:after {
+        color: #0f7a72;
+      }
+    }
+  }
+
+  // 當 details 標籤被展開 ([open]) 時，改變 summary (即 .n) 的 ::after 轉向
+  .citem details[open] .n::after {
+    transform: rotate(90deg); // 轉向上方
+  }
+  .cm {
+    font-size: 0.9rem; // 13.5px / 16
+    margin-top: 2px;
+  }
+
+  .cd {
+    font-size: 0.9rem; // 13.5px / 16
+    color: $text-muted;
+    margin-top: 2px;
+
+    ul {
+    margin: 0;
+    padding-left: 1.5rem;   /* 保留縮排 */}
+
+    ol {
+        list-style: none;   /* 移除黑點 */
+        padding-left: 0;   /* 第二層再縮排 */
+        margin-top: 0.5rem;
+        counter-reset: my-counter; /* 初始化計數器 */
+        text-indent: -26px;
+        margin-left: 26px;
+        li{
+          &:before{
+        counter-increment: my-counter; /* 遞增計數器 */
+          content: "(" counter(my-counter) ") "; /* 設定顯示格式為 (數字) */
+          font-weight: bold; /* 可選：讓括號數字粗體顯示 */
+          margin-right: 5px; /* 可選：調整與文字的間距 */
+          }
+        }
+      }
+
+    li {
+        margin-bottom: 0.5rem;
+        line-height: 1.7;
+      }
+    p{
+      line-height: 1.7;
+      padding: 5px 0px 5px 20px;
+    }
+    
+  }
+
+  .citem {
+    margin-top: 9px;
+    padding-top: 9px;
+    border-top: 1px dashed #bfe0b0;
+
+    &:first-of-type {
+      margin-top: 4px;
+      padding-top: 0;
+      border-top: 0;
+    }
+  }
+
+  .calt {
+    margin-top: 5px;
+    background: #fff;
+    border: 1px dashed #bfe0b0;
+    border-radius: 8px;
+    padding: 5px 8px;
+    font-size: 0.9rem; // 12.5px / 16
+    color: $text-light;
+  }
+
+  .chn {
+    display: inline-block;
+    font-size: 0.6875rem; // 11px / 16
+    font-weight: 800;
+    border-radius: 6px;
+    padding: 1px 6px;
+    margin-left: 6px;
+    background: #fff;
+    border: 1px solid #bfe0b0;
+    color: $status-online-color;
+
+    &.lim {
+      background: #fff3d6;
+      border-color: #e6cf88;
+      color: $status-warning-color;
+    }
+  }
+}
+
+.combo-detail {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-top: 8px;
+  border: 1px solid #bcdee2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.exc {
+  margin-top: 8px;
+  background: #fdeeee;
+  border: 1px solid #f3cfcf;
+  border-radius: 9px;
+  padding: 8px 12px;
+
+  .l {
+    font-size: 0.9rem; // 13px / 16
+    font-weight: 800;
+    color: $status-offline-color;
+    margin-bottom: 2px;
+    background: none;
+    padding: 0px;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 17px;
+  }
+
+  li {
+    font-size: 0.9rem; // 13.5px / 16
+    color: #7a3b2f;
+    margin: 2px 0;
+  }
+}
+
+.tip {
+  margin-top: 8px;
+  font-size: 0.9rem; // 13.5px / 16
+  color: #7a6a3a;
+  background: #fff8e6;
+  border: 1px dashed #e6cf88;
+  border-radius: 8px;
+  padding: 6px 9px;
+}
+
+// 加入追蹤清單按鈕 (改為底部全圓角膠囊型次要功能鍵，釋放呼吸感)
+.trackbtn {
+  appearance: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 18px;
+  background: #fff;
+  border: 1px dotted #0e7a72;
+  color: #0e7a72;
+  font-weight: 700;
+  font-size: 1rem; // 15px
+  padding: 12px;
+  border-radius: 12px; 
+  transition: all 0.2s ease;
+
+  
+  &:active {
+    transform: scale(0.98);
+  }
+  &.added{
+    background: #0e7a72;
+    border-color: #0e7a72;
+    color: #fff;
+  }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <script src="js/javascripts.js"></script>
+</head>
+
+<body>
+
+  <div class="phone">
+    <header id="header-home" class="home-header main">
+      <div class="appbar"><button class="back" onclick="history.back()">‹</button></div>
+      <div class="gov-badge">我的E政府-GOV</div>
+      <div class="sub-title">孩子出生</div>
+    </header>
+
+    <div class="screen">
+      <div class="pad" id="app">
+        <div class="flowtop">
+          <div class="ev">孩子上幼兒園</div>
+          <div class="ct">臺北市</div>
+        </div>
+        <div class="ftools"><button class="expbtn" onclick="toggleAll(this)">展開全部</button></div>
+        <div class="acc">
+          <div class="st k-none common">
+            <button class="sth" onclick="this.parentNode.classList.toggle('open')"><span class="snum">1</span>
+              <span class="stt"><span class="nm">幼兒園登記</span></span><span class="chev">▶</span></button>
+            <div class="stb">
+               <div class="chan on">
+                <div class="lbl">線上辦理</div>臺北市幼兒園招生資訊網（招生e點通）（免自然人憑證（以幼兒資料登記，特殊資格上傳文件））<a class="btn"
+                  href="https://kid-online.tp.edu.tw/" target="_blank" rel="noopener">前往線上申辦 ↗</a>
+              </div>
+             <button class="trackbtn " onclick="track(1)">＋ 加入我的辦理清單</button>
+            </div>
+          </div>
+          <div class="st k-online central">
+            <button class="sth" onclick="this.parentNode.classList.toggle('open')"><span class="snum">2</span>
+              <span class="stt"><span class="nm">2歲以上未滿5歲幼兒育兒津貼（符合資格者）</span></span><span class="chev">▶</span></button>
+            <div class="stb">
+              <div class="rows">
+                <!-- <div class="r"><span class="k">服務內容</span><span>為新生兒取得法律身分，完成戶籍登記，作為享有各項政府服務與福利的重要基礎。</span></div> -->
+                <div class="r"><span class="k">金額</span><span>第1名5,000元/月、第2名6,000元/月、第3名以上7,000元/月</span></div>
+                <div class="r"><span class="k">資格</span><span>須為滿2歲至未滿5歲之我國籍幼兒，且期間未就讀公共化或準公共幼兒園，也未經政府公費安置。</span></div>
+                <div class="r"><span class="k">申請期限</span><span>須為滿2歲至未滿5歲之我國籍幼兒，且期間未就讀公共化或準公共幼兒園，也未經政府公費安置。</span></div>
+              </div>
+              <div class="chan on">
+                <div class="lbl">線上辦理</div>教育部國教署育兒津貼線上申請系統（憑證：已註冊健保卡或自然人憑證／行動自然人憑證（TW FidO））<br><a class="btn"
+                  href="https://e-service.k12ea.gov.tw/" target="_blank" rel="noopener">前往線上申辦 ↗</a>
+              </div>
+              <a class="counterbtn" onclick="toggleCounter(1,this)">
+                <p>我要臨櫃</p>
+                <div class="chan off" id="ct1" style="display:none">
+                幼兒戶籍地鄉（鎮、市、區）公所或就讀園所<br>>應備：申請表、父母及幼兒身分證明、受款人金融機構存摺封面影本</div>
+              </a>
+              <button class="trackbtn " onclick="track(1)">＋ 加入我的辦理清單</button>
+            </div>
+          </div>
+          <div class="st k-online central">
+            <button class="sth" onclick="this.parentNode.classList.toggle('open')"><span class="snum">3</span>
+              <span class="stt"><span class="nm">2歲以上未滿5歲幼兒育兒津貼（符合資格者）</span></span><span class="chev">▶</span></button>
+            <div class="stb">
+            <div class="rows">
+                <!-- <div class="r"><span class="k">服務內容</span><span>為新生兒取得法律身分，完成戶籍登記，作為享有各項政府服務與福利的重要基礎。</span></div> -->
+                <div class="r"><span class="k">金額</span><span>家長每月繳費上限—公立1,000元、非營利2,000元、準公共3,000元（第2胎再減1,000元、第3胎以上公立與非營利免費；低收/中低收免費）</span></div>
+                <div class="r"><span class="k">資格</span><span>須為滿5歲至未入國小之我國籍幼兒，且期間未接受公共化或準公共教保服務，也未經政府公費安置。</span></div>
+                <div class="r"><span class="k">申請期限</span><span>自滿5歲當學年度之8月1日起即可申請，最遲須於當年12月31日前提出，幼兒入國小後即不予受理。</span></div>
+              </div>
+              <div class="chan on">
+                <div class="lbl">線上辦理</div>教育部國教署育兒津貼線上申請系統（憑證：已註冊健保卡或自然人憑證／行動自然人憑證（TW FidO））<br><a class="btn"
+                  href="https://e-service.k12ea.gov.tw/" target="_blank" rel="noopener">前往線上申辦 ↗</a>
+              </div>
+              <a class="counterbtn" onclick="toggleCounter(1,this)">
+                <p>我要臨櫃</p>
+                <div class="chan off" id="ct1" style="display:none">
+                幼兒戶籍地鄉（鎮、市、區）公所或就讀園所<br>>應備：申請表、父母及幼兒身分證明、受款人金融機構存摺封面影本</div>
+              </a>
+              <button class="trackbtn " onclick="track(3)">＋ 加入我的辦理清單</button>
+            </div>
+          </div>
+          <div class="st k-online central">
+            <button class="sth" onclick="this.parentNode.classList.toggle('open')"><span class="snum">4</span>
+              <span class="stt"><span class="nm">臺北市就學補助（符合資格者）</span></span><span class="chev">▶</span></button>
+            <div class="stb">
+              <div class="rows">
+                <!-- <div class="r"><span class="k">服務內容</span><span>為新生兒取得法律身分，完成戶籍登記，作為享有各項政府服務與福利的重要基礎。</span></div> -->
+                <div class="r"><span class="k">金額</span><span>依家戶所得級距補助：70萬以上2,543元；50-70萬7,543元；50萬以下12,543元。</span></div>
+                <div class="r"><span class="k">資格</span><span>114學年度9月1日前滿5足歲幼兒，於指定日前設籍本市，就讀外縣市私立幼兒園（不含準公共及非營利）。</span></div>
+                <div class="r"><span class="k">申請期限</span><span>115年3月1日至115年4月15日。</span></div>
+              </div>
+              <div class="chan on">
+                <div class="lbl">線上辦理</div>無（需掛號郵寄）。
+              </div>
+              <a class="counterbtn" onclick="toggleCounter(1,this)">
+                <p>我要臨櫃</p>
+                <div class="chan off" id="ct1" style="display:none">
+                掛號郵寄至北市教育局學前教育科。<br>應備申請書、領據、存摺影本、戶口名簿/戶籍謄本、113年度綜合所得稅清單等。</div>
+              </a>
+              <button class="trackbtn " onclick="track(1)">＋ 加入我的辦理清單</button>
+            </div>
+          </div>
+          <div class="st k-online central">
+            <button class="sth" onclick="this.parentNode.classList.toggle('open')"><span class="snum">5</span>
+              <span class="stt"><span class="nm">臺北市早期療育費用補助（符合資格者）</span></span><span class="chev">▶</span></button>
+            <div class="stb">
+              <div class="rows">
+                <!-- <div class="r"><span class="k">服務內容</span><span>為新生兒取得法律身分，完成戶籍登記，作為享有各項政府服務與福利的重要基礎。</span></div> -->
+                <div class="r"><span class="k">金額</span><span>一般戶最高補助3,000~4,000元/月；低收入戶最高補助5,000~6,000元/月(依各縣市實際公告為準，含交通費與療育費)。</span></div>
+                <div class="r"><span class="k">資格</span><span>設籍該縣市，未滿6歲(或已滿6歲未入小學)並領有發展遲緩證明、綜合評估報告書或身障證明之兒童，且未接受全日型機構安置。</span></div>
+                <div class="r"><span class="k">申請期限</span><span>多採按季(每3個月)或雙月分期申請，請於各縣市規定之月份(如1, 4, 7, 10月)或療育次月起規定時間內提出。</span></div>
+              </div>
+              <div class="chan on">
+                <div class="lbl">線上辦理</div>部分縣市提供線上申辦平台(可點擊右側網址查閱)；未提供者請依官網公告之下載表單為主。
+              </div>
+              <a class="counterbtn" onclick="toggleCounter(1,this)">
+                <p>我要臨櫃</p>
+                <div class="chan off" id="ct1" style="display:none">
+                向戶籍地區公所、社會局處或通報轉介中心辦理<br>應備文件：申請表、評估/身障證明、戶口名簿、交通/療育費用收據、存摺影本。</div>
+              </a>
+              <button class="trackbtn " onclick="track(1)">＋ 加入我的辦理清單</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav" id="nav"><a aria-current="true" onclick="location.href='index.html'"><span class="i"><svg
+            width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 11l9-8 9 8"></path>
+            <path d="M5 10v10h14V10"></path>
+          </svg></span>首頁</a><a aria-current="false" onclick="location.href='tracker-list.html'"><span class="i"><svg
+            width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"></circle>
+            <polyline points="8 12 11 15 16 9"></polyline>
+          </svg></span>我的辦理清單</a><a aria-current="false" onclick="location.href='login.html'"><span class="i"><svg
+            width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path>
+          </svg></span>登入</a></div>
+  </div>
+</body>
+
+</html>
