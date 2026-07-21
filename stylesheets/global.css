@@ -878,13 +878,10 @@ a {
   display: flex;
   align-items: center;
   gap: 14px;
-}
-/* line 154, ../sass/_serve-flow.scss */
-.sth button {
   color: #333;
 }
 
-/* line 159, ../sass/_serve-flow.scss */
+/* line 157, ../sass/_serve-flow.scss */
 .snum {
   flex: none;
   width: 28px;
@@ -899,43 +896,43 @@ a {
   justify-content: center;
 }
 
-/* line 173, ../sass/_serve-flow.scss */
+/* line 171, ../sass/_serve-flow.scss */
 .stt {
   flex: 1;
   min-width: 0;
   text-align: left;
 }
-/* line 178, ../sass/_serve-flow.scss */
+/* line 176, ../sass/_serve-flow.scss */
 .stt .nm {
   font-size: 1.1rem;
   line-height: 1.5;
   font-weight: 500;
 }
-/* line 184, ../sass/_serve-flow.scss */
+/* line 182, ../sass/_serve-flow.scss */
 .stt .hn {
   font-size: 0.8125rem;
   margin-top: 2px;
 }
 
-/* line 190, ../sass/_serve-flow.scss */
+/* line 188, ../sass/_serve-flow.scss */
 .way {
   font-weight: 800;
   padding: 1px 7px;
   border-radius: 6px;
   font-size: 1rem;
 }
-/* line 196, ../sass/_serve-flow.scss */
+/* line 194, ../sass/_serve-flow.scss */
 .way.on {
   background: #e6f3df;
   color: #4e9c3a;
 }
-/* line 200, ../sass/_serve-flow.scss */
+/* line 198, ../sass/_serve-flow.scss */
 .way.off {
   background: #faf1d8;
   color: #8a6a00;
 }
 
-/* line 206, ../sass/_serve-flow.scss */
+/* line 204, ../sass/_serve-flow.scss */
 .chev {
   flex: none;
   color: #6b6b66;
@@ -943,14 +940,14 @@ a {
   transform: rotate(-90deg);
 }
 
-/* line 214, ../sass/_serve-flow.scss */
+/* line 212, ../sass/_serve-flow.scss */
 .stb {
   display: none;
   padding: 0 15px 15px;
   font-size: 0.9rem;
 }
 
-/* line 221, ../sass/_serve-flow.scss */
+/* line 219, ../sass/_serve-flow.scss */
 .amount {
   background: rgba(254, 242, 242, 0.9);
   border: 1px solid rgba(252, 165, 165, 0.4);
@@ -963,7 +960,7 @@ a {
   line-height: 1.7;
 }
 
-/* line 233, ../sass/_serve-flow.scss */
+/* line 231, ../sass/_serve-flow.scss */
 .rows {
   display: flex;
   flex-direction: column;
@@ -971,30 +968,30 @@ a {
   margin-bottom: 6px;
 }
 
-/* line 240, ../sass/_serve-flow.scss */
+/* line 238, ../sass/_serve-flow.scss */
 .r {
   display: grid;
   grid-template-columns: 65px 1fr;
   gap: 8px;
 }
-/* line 245, ../sass/_serve-flow.scss */
+/* line 243, ../sass/_serve-flow.scss */
 .r .k {
   color: #424852;
   font-weight: 700;
 }
 
-/* line 251, ../sass/_serve-flow.scss */
+/* line 249, ../sass/_serve-flow.scss */
 .chan {
   border-radius: 16px;
   padding: 10px 15px;
   font-size: 0.9rem;
   line-height: 1.7;
 }
-/* line 258, ../sass/_serve-flow.scss */
+/* line 256, ../sass/_serve-flow.scss */
 .chan.soon {
   filter: grayscale(1) invert(0.1);
 }
-/* line 262, ../sass/_serve-flow.scss */
+/* line 260, ../sass/_serve-flow.scss */
 .chan .lbl {
   font-size: 0.9rem;
   font-weight: 800;
@@ -1005,18 +1002,18 @@ a {
   letter-spacing: 0.03em;
   margin-right: 8px;
 }
-/* line 273, ../sass/_serve-flow.scss */
+/* line 271, ../sass/_serve-flow.scss */
 .chan.on {
   background: rgba(240, 251, 253, 0.85);
   border: 1px solid rgba(74, 205, 222, 0.4);
   color: #165365;
 }
-/* line 277, ../sass/_serve-flow.scss */
+/* line 275, ../sass/_serve-flow.scss */
 .chan.on .lbl {
   background: #bbf7ea;
   color: #165365;
 }
-/* line 282, ../sass/_serve-flow.scss */
+/* line 280, ../sass/_serve-flow.scss */
 .chan.off {
   background: #fff;
   border-radius: 10px;
@@ -1027,13 +1024,13 @@ a {
   font-weight: normal;
   color: #424852;
 }
-/* line 292, ../sass/_serve-flow.scss */
+/* line 290, ../sass/_serve-flow.scss */
 .chan.off .lbl {
   background: #bbf7ea;
   color: #B45309;
 }
 
-/* line 300, ../sass/_serve-flow.scss */
+/* line 298, ../sass/_serve-flow.scss */
 .btn {
   display: flex;
   align-items: center;
@@ -1049,17 +1046,17 @@ a {
   box-shadow: 0 6px 16px rgba(13, 148, 136, 0.25);
   transition: all 0.2s ease;
 }
-/* line 317, ../sass/_serve-flow.scss */
+/* line 315, ../sass/_serve-flow.scss */
 .btn:hover {
   background: linear-gradient(135deg, #0D9488 0%, #0F766E 100%);
 }
-/* line 321, ../sass/_serve-flow.scss */
+/* line 319, ../sass/_serve-flow.scss */
 .btn:active {
   transform: scale(0.98);
   box-shadow: 0 2px 6px rgba(13, 148, 136, 0.2);
 }
 
-/* line 328, ../sass/_serve-flow.scss */
+/* line 326, ../sass/_serve-flow.scss */
 .counterbtn {
   appearance: none;
   cursor: pointer;
@@ -1075,11 +1072,11 @@ a {
   transition: all 0.2s ease;
   display: block;
 }
-/* line 344, ../sass/_serve-flow.scss */
+/* line 342, ../sass/_serve-flow.scss */
 .counterbtn p {
   text-align: center;
 }
-/* line 349, ../sass/_serve-flow.scss */
+/* line 347, ../sass/_serve-flow.scss */
 .counterbtn p:after {
   content: "▶";
   font-size: 0.6875rem;
@@ -1090,23 +1087,23 @@ a {
   float: right;
   color: #6b6b66;
 }
-/* line 361, ../sass/_serve-flow.scss */
+/* line 359, ../sass/_serve-flow.scss */
 .counterbtn.open {
   background: rgba(240, 251, 253, 0.85);
   border-color: 1px solid rgba(74, 205, 222, 0.4);
   box-shadow: 0 4px 12px rgba(245, 158, 11, 0.12);
 }
-/* line 365, ../sass/_serve-flow.scss */
+/* line 363, ../sass/_serve-flow.scss */
 .counterbtn.open .chan {
   display: block !important;
 }
-/* line 370, ../sass/_serve-flow.scss */
+/* line 368, ../sass/_serve-flow.scss */
 .counterbtn.open p:after {
   opacity: 1;
   transform: rotate(90deg);
 }
 
-/* line 379, ../sass/_serve-flow.scss */
+/* line 377, ../sass/_serve-flow.scss */
 .combo {
   background: rgba(240, 251, 253, 0.85);
   border: 1px solid rgba(74, 205, 222, 0.4);
@@ -1114,7 +1111,7 @@ a {
   border-radius: 10px;
   padding: 9px 11px;
 }
-/* line 386, ../sass/_serve-flow.scss */
+/* line 384, ../sass/_serve-flow.scss */
 .combo .l {
   font-size: 1rem;
   font-weight: 800;
@@ -1123,7 +1120,7 @@ a {
   padding: 3px 8px;
   text-align: center;
 }
-/* line 395, ../sass/_serve-flow.scss */
+/* line 393, ../sass/_serve-flow.scss */
 .combo .n {
   font-weight: 700;
   color: #2b2b2b;
@@ -1136,11 +1133,11 @@ a {
   gap: 8px;
   font-size: 0.95rem;
 }
-/* line 408, ../sass/_serve-flow.scss */
+/* line 406, ../sass/_serve-flow.scss */
 .combo .n::-webkit-details-marker {
   display: none;
 }
-/* line 413, ../sass/_serve-flow.scss */
+/* line 411, ../sass/_serve-flow.scss */
 .combo .n::after {
   content: "▶";
   font-size: 0.75rem;
@@ -1148,36 +1145,36 @@ a {
   transform: rotate(-90deg);
   transition: transform 0.2s ease, color 0.2s ease;
 }
-/* line 421, ../sass/_serve-flow.scss */
+/* line 419, ../sass/_serve-flow.scss */
 .combo .n:hover {
   color: #0f7a72;
 }
-/* line 423, ../sass/_serve-flow.scss */
+/* line 421, ../sass/_serve-flow.scss */
 .combo .n:hover:after {
   color: #0f7a72;
 }
-/* line 430, ../sass/_serve-flow.scss */
+/* line 428, ../sass/_serve-flow.scss */
 .combo .citem details[open] .n::after {
   transform: rotate(90deg);
 }
-/* line 433, ../sass/_serve-flow.scss */
+/* line 431, ../sass/_serve-flow.scss */
 .combo .cm {
   font-size: 0.9rem;
   margin-top: 2px;
 }
-/* line 438, ../sass/_serve-flow.scss */
+/* line 436, ../sass/_serve-flow.scss */
 .combo .cd {
   font-size: 0.9rem;
   color: #424852;
   margin-top: 2px;
 }
-/* line 443, ../sass/_serve-flow.scss */
+/* line 441, ../sass/_serve-flow.scss */
 .combo .cd ul {
   margin: 0;
   padding-left: 1.5rem;
   /* 保留縮排 */
 }
-/* line 447, ../sass/_serve-flow.scss */
+/* line 445, ../sass/_serve-flow.scss */
 .combo .cd ol {
   list-style: none;
   /* 移除黑點 */
@@ -1189,7 +1186,7 @@ a {
   text-indent: -26px;
   margin-left: 26px;
 }
-/* line 455, ../sass/_serve-flow.scss */
+/* line 453, ../sass/_serve-flow.scss */
 .combo .cd ol li:before {
   counter-increment: my-counter;
   /* 遞增計數器 */
@@ -1200,29 +1197,29 @@ a {
   margin-right: 5px;
   /* 可選：調整與文字的間距 */
 }
-/* line 464, ../sass/_serve-flow.scss */
+/* line 462, ../sass/_serve-flow.scss */
 .combo .cd li {
   margin-bottom: 0.5rem;
   line-height: 1.7;
 }
-/* line 468, ../sass/_serve-flow.scss */
+/* line 466, ../sass/_serve-flow.scss */
 .combo .cd p {
   line-height: 1.7;
   padding: 5px 0px 5px 20px;
 }
-/* line 475, ../sass/_serve-flow.scss */
+/* line 473, ../sass/_serve-flow.scss */
 .combo .citem {
   margin-top: 9px;
   padding-top: 9px;
   border-top: 1px dashed #bfe0b0;
 }
-/* line 480, ../sass/_serve-flow.scss */
+/* line 478, ../sass/_serve-flow.scss */
 .combo .citem:first-of-type {
   margin-top: 4px;
   padding-top: 0;
   border-top: 0;
 }
-/* line 487, ../sass/_serve-flow.scss */
+/* line 485, ../sass/_serve-flow.scss */
 .combo .calt {
   margin-top: 5px;
   background: #fff;
@@ -1232,7 +1229,7 @@ a {
   font-size: 0.9rem;
   color: #6b6b66;
 }
-/* line 497, ../sass/_serve-flow.scss */
+/* line 495, ../sass/_serve-flow.scss */
 .combo .chn {
   display: inline-block;
   font-size: 0.6875rem;
@@ -1244,14 +1241,14 @@ a {
   border: 1px solid #bfe0b0;
   color: #4e9c3a;
 }
-/* line 508, ../sass/_serve-flow.scss */
+/* line 506, ../sass/_serve-flow.scss */
 .combo .chn.lim {
   background: #fff3d6;
   border-color: #e6cf88;
   color: #8a6a00;
 }
 
-/* line 516, ../sass/_serve-flow.scss */
+/* line 514, ../sass/_serve-flow.scss */
 .combo-detail {
   background: #fff;
   border-radius: 10px;
@@ -1261,7 +1258,7 @@ a {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
 }
 
-/* line 525, ../sass/_serve-flow.scss */
+/* line 523, ../sass/_serve-flow.scss */
 .exc {
   margin-top: 8px;
   background: #fdeeee;
@@ -1269,7 +1266,7 @@ a {
   border-radius: 9px;
   padding: 8px 12px;
 }
-/* line 532, ../sass/_serve-flow.scss */
+/* line 530, ../sass/_serve-flow.scss */
 .exc .l {
   font-size: 0.9rem;
   font-weight: 800;
@@ -1278,19 +1275,19 @@ a {
   background: none;
   padding: 0px;
 }
-/* line 541, ../sass/_serve-flow.scss */
+/* line 539, ../sass/_serve-flow.scss */
 .exc ul {
   margin: 0;
   padding-left: 17px;
 }
-/* line 546, ../sass/_serve-flow.scss */
+/* line 544, ../sass/_serve-flow.scss */
 .exc li {
   font-size: 0.9rem;
   color: #7a3b2f;
   margin: 2px 0;
 }
 
-/* line 553, ../sass/_serve-flow.scss */
+/* line 551, ../sass/_serve-flow.scss */
 .tip {
   margin-top: 8px;
   font-size: 0.9rem;
@@ -1301,11 +1298,11 @@ a {
   padding: 6px 9px;
 }
 
-/* line 564, ../sass/_serve-flow.scss */
+/* line 562, ../sass/_serve-flow.scss */
 .trackbtn {
   appearance: none;
   cursor: pointer;
-  width: stretch;
+  width: calc(100% - 30px);
   margin: 15px;
   margin-top: 0px;
   background: #fff;
@@ -1315,12 +1312,13 @@ a {
   padding: 10px;
   border-radius: 10px;
   transition: all 0.2s ease;
+  display: block;
 }
-/* line 578, ../sass/_serve-flow.scss */
+/* line 577, ../sass/_serve-flow.scss */
 .trackbtn:active {
   transform: scale(0.98);
 }
-/* line 581, ../sass/_serve-flow.scss */
+/* line 580, ../sass/_serve-flow.scss */
 .trackbtn.added {
   background: #0e7a72;
   border-color: #0e7a72;

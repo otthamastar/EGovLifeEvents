@@ -150,10 +150,8 @@
   display: flex;
   align-items: center;
   gap: 14px;
-
-  button{
-     color: #333;
-  }
+  color: #333;
+     
 }
 
 .snum {
@@ -564,7 +562,7 @@
 .trackbtn {
   appearance: none;
   cursor: pointer;
-  width: stretch;
+  width: calc(100% - 30px);
   margin: 15px;
   margin-top: 0px;
   background: #fff;
@@ -574,6 +572,7 @@
   padding: 10px;
   border-radius: 10px; 
   transition: all 0.2s ease;
+  display: block;
   
   &:active {
     transform: scale(0.98);
