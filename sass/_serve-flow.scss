@@ -105,6 +105,20 @@
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   // overflow: hidden;
   line-height: 1.7;
+  position: relative;
+
+  a.add{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #12a2a8;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 100%;
+    border: 1px solid #12a2a8;
+  }
   
   // // 移除突兀的左側粗色條，改為優雅的點綴色
   // &.k-online  { border-left: 1px solid rgba(74, 222, 128, 0.5); }
@@ -132,10 +146,14 @@
   border: none;
   background: transparent;
   cursor: pointer;
-  padding: 18px 20px;
+  padding: 15px 20px;
   display: flex;
   align-items: center;
   gap: 14px;
+
+  button{
+     color: #333;
+  }
 }
 
 .snum {
@@ -155,6 +173,7 @@
 .stt {
   flex: 1;
   min-width: 0;
+  text-align: left;
 
   .nm {
     font-size: 1.1rem;
@@ -230,11 +249,15 @@
 }
 
 .chan {
- border-radius: 16px;
-  padding: 16px;
+  border-radius: 16px;
+  padding: 10px 15px;
   font-size: 0.9rem; // 14px
   line-height: 1.7;
-  margin-top: 10px;
+  
+
+  &.soon{
+    filter: grayscale(1) invert(0.1);
+  }
 
   .lbl {
     font-size: 0.9rem; // 12px
@@ -242,7 +265,7 @@
     padding: 3px 8px;
     border-radius: 6px;
     display: inline-block;
-    margin-bottom: 10px;
+    margin: 5px 0px;
     letter-spacing: 0.03em;
     margin-right: 8px;
   }
@@ -288,6 +311,8 @@
   border-radius: 12px;
   box-shadow: $shadow-button;
   transition: all 0.2s ease;
+
+ 
 
    &:hover{
     background: linear-gradient(135deg, #0D9488 0%, #0F766E 100%);
@@ -352,7 +377,6 @@
 
 // 組合套餐與細節
 .combo {
-  margin-top: 12px;
   background: $online-bg;
   border: 1px solid $online-border;
   color: #0e7c73;
@@ -540,17 +564,16 @@
 .trackbtn {
   appearance: none;
   cursor: pointer;
-  width: 100%;
-  margin-top: 18px;
+  width: stretch;
+  margin: 15px;
+  margin-top: 0px;
   background: #fff;
   border: 1px dotted #0e7a72;
   color: #0e7a72;
-  font-weight: 700;
-  font-size: 1rem; // 15px
-  padding: 12px;
-  border-radius: 12px; 
+  font-size: 0.95rem; // 15px
+  padding: 10px;
+  border-radius: 10px; 
   transition: all 0.2s ease;
-
   
   &:active {
     transform: scale(0.98);

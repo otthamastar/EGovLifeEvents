@@ -9,6 +9,24 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+button,
+.btn,
+.trackbtn,
+.counterbtn,
+.sth,
+.ti{
+    transition:all .15s ease;
+}
+
+button:active,
+.btn:active,
+.trackbtn:active,
+.counterbtn:active,
+.sth:active,
+.ti:active{
+    transform:scale(.97);
+    opacity:.75;}
+
 body {
   font-family: $font-stack;
   background: #ffffff;
