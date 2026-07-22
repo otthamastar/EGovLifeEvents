@@ -3,9 +3,9 @@
 // ==========================================
 // 7. 驗證與登入 (Login)
 // ==========================================
-.lwrap {
-  margin-top: 14px;
-}
+// .lwrap {
+//   margin-top: 14px;
+// }
 
 .lcard {
   background: #fff;
@@ -51,6 +51,25 @@
   }
 }
 
+.mailbox{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+
+    transition:
+        max-height .4s ease,
+        opacity .3s ease,
+        margin-top .3s ease;
+
+    margin-top: 0;
+}
+
+.mailbox.show{
+    max-height: 500px;   /* 大於內容高度即可 */
+    opacity: 1;
+    margin-top: 16px;
+}
+
 .mail {
   margin-top: 14px;
   background: #eef4fb;
@@ -69,6 +88,11 @@
     text-align: center;
     margin-bottom: 10px;
   }
+
+  .pbtn:disabled{
+    opacity: .5;
+    cursor: not-allowed;
+}
 
   .code {
     font-size: 1.96875rem; // 31.5px / 16

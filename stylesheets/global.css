@@ -1365,10 +1365,9 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-top: 9px;
 }
 
-/* line 41, ../sass/_tracker.scss */
+/* line 40, ../sass/_tracker.scss */
 .stpill {
   appearance: none;
   cursor: pointer;
@@ -1380,25 +1379,25 @@ a {
   padding: 5px 12px;
 }
 
-/* line 52, ../sass/_tracker.scss */
+/* line 51, ../sass/_tracker.scss */
 .stp-todo {
   background: #f0ecdb;
   color: #424852;
 }
 
-/* line 53, ../sass/_tracker.scss */
+/* line 52, ../sass/_tracker.scss */
 .stp-doing {
   background: #dbeafe;
   color: #12a2a8;
 }
 
-/* line 54, ../sass/_tracker.scss */
+/* line 53, ../sass/_tracker.scss */
 .stp-done {
   background: #e6f3df;
   color: #4e9c3a;
 }
 
-/* line 56, ../sass/_tracker.scss */
+/* line 55, ../sass/_tracker.scss */
 .rm {
   margin-left: auto;
   background: none;
@@ -1409,7 +1408,7 @@ a {
   font-weight: 700;
 }
 
-/* line 66, ../sass/_tracker.scss */
+/* line 65, ../sass/_tracker.scss */
 .empty {
   text-align: center;
   color: #424852;
@@ -1420,7 +1419,7 @@ a {
   margin-top: 10px;
 }
 
-/* line 79, ../sass/_tracker.scss */
+/* line 78, ../sass/_tracker.scss */
 .pad .mail-name {
   font-size: 0.9rem !important;
   font-weight: 700 !important;
@@ -1430,7 +1429,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-/* line 89, ../sass/_tracker.scss */
+/* line 88, ../sass/_tracker.scss */
 .pad .mail-name::after {
   content: "Tracker";
   font-size: 0.6875rem;
@@ -1441,7 +1440,7 @@ a {
   font-weight: 800;
   text-transform: uppercase;
 }
-/* line 102, ../sass/_tracker.scss */
+/* line 101, ../sass/_tracker.scss */
 .pad .mail-info {
   font-size: 0.9rem !important;
   color: #424852 !important;
@@ -1453,14 +1452,14 @@ a {
   line-height: 1.4;
 }
 
-/* line 117, ../sass/_tracker.scss */
+/* line 116, ../sass/_tracker.scss */
 .trk {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-/* line 124, ../sass/_tracker.scss */
+/* line 123, ../sass/_tracker.scss */
 .trkitem {
   background: #ffffff;
   border-radius: 20px;
@@ -1469,12 +1468,11 @@ a {
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.03), 0 2px 6px rgba(0, 0, 0, 0.01);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-/* line 132, ../sass/_tracker.scss */
+/* line 131, ../sass/_tracker.scss */
 .trkitem:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  transform: scale(0.97);
 }
-/* line 138, ../sass/_tracker.scss */
+/* line 136, ../sass/_tracker.scss */
 .trkitem .ctx {
   font-size: 0.9rem;
   font-weight: 800;
@@ -1485,23 +1483,19 @@ a {
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 150, ../sass/_tracker.scss */
+/* line 148, ../sass/_tracker.scss */
 .trkitem .ti {
   font-size: 1.0625rem !important;
   font-weight: 700;
   color: #0F172A !important;
   text-decoration: none !important;
   line-height: 1.4;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
   display: block;
   transition: color 0.2s;
 }
-/* line 160, ../sass/_tracker.scss */
-.trkitem .ti:hover {
-  color: #1D4ED8 !important;
-}
 
-/* line 169, ../sass/_tracker.scss */
+/* line 167, ../sass/_tracker.scss */
 .bot {
   display: flex;
   justify-content: space-between;
@@ -1510,7 +1504,7 @@ a {
   padding-top: 14px;
 }
 
-/* line 178, ../sass/_tracker.scss */
+/* line 176, ../sass/_tracker.scss */
 .stpill {
   appearance: none;
   cursor: pointer;
@@ -1524,13 +1518,13 @@ a {
   align-items: baseline;
   gap: 6px;
 }
-/* line 192, ../sass/_tracker.scss */
+/* line 190, ../sass/_tracker.scss */
 .stpill.stp-todo {
   background: #F1F5F9;
   color: #475569;
   border-color: #E2E8F0;
 }
-/* line 197, ../sass/_tracker.scss */
+/* line 195, ../sass/_tracker.scss */
 .stpill.stp-todo::before {
   content: "";
   width: 6px;
@@ -1538,14 +1532,14 @@ a {
   background: #475569;
   border-radius: 50%;
 }
-/* line 207, ../sass/_tracker.scss */
+/* line 205, ../sass/_tracker.scss */
 .stpill.stp-doing {
   background: #EFF6FF;
   color: #1D4ED8;
   border-color: rgba(59, 130, 246, 0.2);
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
 }
-/* line 213, ../sass/_tracker.scss */
+/* line 211, ../sass/_tracker.scss */
 .stpill.stp-doing::before {
   content: "";
   width: 6px;
@@ -1554,24 +1548,24 @@ a {
   border-radius: 50%;
   animation: pulse 1.5s infinite;
 }
-/* line 224, ../sass/_tracker.scss */
+/* line 222, ../sass/_tracker.scss */
 .stpill.stp-done {
   background: #ECFDF5;
   color: #047857;
   border-color: rgba(16, 185, 129, 0.2);
 }
-/* line 229, ../sass/_tracker.scss */
+/* line 227, ../sass/_tracker.scss */
 .stpill.stp-done::before {
   content: "✓";
   font-size: 0.75rem;
   font-weight: 900;
 }
-/* line 236, ../sass/_tracker.scss */
+/* line 234, ../sass/_tracker.scss */
 .stpill:active {
   transform: scale(0.96);
 }
 
-/* line 242, ../sass/_tracker.scss */
+/* line 240, ../sass/_tracker.scss */
 .rm {
   appearance: none;
   background: none;
@@ -1584,16 +1578,16 @@ a {
   border-radius: 8px;
   transition: all 0.2s;
 }
-/* line 254, ../sass/_tracker.scss */
+/* line 252, ../sass/_tracker.scss */
 .rm:hover {
   background: rgba(239, 68, 68, 0.05);
 }
-/* line 258, ../sass/_tracker.scss */
+/* line 256, ../sass/_tracker.scss */
 .rm:active {
   background: rgba(239, 68, 68, 0.1);
 }
 
-/* line 267, ../sass/_tracker.scss */
+/* line 265, ../sass/_tracker.scss */
 .bot .mutelink {
   appearance: none;
   background: none;
@@ -1609,7 +1603,7 @@ a {
   transition: all 0.2s ease;
   border: 1px solid transparent;
 }
-/* line 282, ../sass/_tracker.scss */
+/* line 280, ../sass/_tracker.scss */
 .bot .mutelink:hover {
   color: #EF4444;
   background: rgba(239, 68, 68, 0.05);
@@ -1635,11 +1629,6 @@ a {
   text-indent: -9999px;
   font: 0/0 a;
   color: transparent;
-}
-
-/* line 6, ../sass/_login.scss */
-.lwrap {
-  margin-top: 14px;
 }
 
 /* line 10, ../sass/_login.scss */
@@ -1689,6 +1678,23 @@ a {
 }
 
 /* line 54, ../sass/_login.scss */
+.mailbox {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height .4s ease, opacity .3s ease, margin-top .3s ease;
+  margin-top: 0;
+}
+
+/* line 67, ../sass/_login.scss */
+.mailbox.show {
+  max-height: 500px;
+  /* 大於內容高度即可 */
+  opacity: 1;
+  margin-top: 16px;
+}
+
+/* line 73, ../sass/_login.scss */
 .mail {
   margin-top: 14px;
   background: #eef4fb;
@@ -1696,7 +1702,7 @@ a {
   border-radius: 12px;
   padding: 13px 14px;
 }
-/* line 61, ../sass/_login.scss */
+/* line 80, ../sass/_login.scss */
 .mail .mh {
   font-size: 0.9rem;
   font-weight: 800;
@@ -1708,7 +1714,12 @@ a {
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 73, ../sass/_login.scss */
+/* line 92, ../sass/_login.scss */
+.mail .pbtn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+/* line 97, ../sass/_login.scss */
 .mail .code {
   font-size: 1.96875rem;
   font-weight: 900;
@@ -1717,12 +1728,12 @@ a {
   text-align: center;
   margin: 8px 0;
 }
-/* line 82, ../sass/_login.scss */
+/* line 106, ../sass/_login.scss */
 .mail .lk {
   font-size: 1rem;
 }
 
-/* line 87, ../sass/_login.scss */
+/* line 111, ../sass/_login.scss */
 .mutelink {
   display: block;
   text-align: center;

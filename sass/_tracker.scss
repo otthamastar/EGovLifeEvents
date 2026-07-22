@@ -33,7 +33,6 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-top: 9px;
   }
 }
 
@@ -130,8 +129,7 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+    transform: scale(0.97);
   }
 
   // 「出生・臺北市」分類標籤
@@ -153,13 +151,13 @@
     color: $text-title !important;
     text-decoration: none !important; // 拔除生硬的底線
     line-height: 1.4;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
     display: block;
     transition: color 0.2s;
 
-    &:hover {
-      color: #1D4ED8 !important;
-    }
+    // &:hover {
+    //   color: #1D4ED8 !important;
+    // }
   }
 }
 

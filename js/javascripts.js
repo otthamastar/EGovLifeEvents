@@ -126,3 +126,32 @@ function rmProg(event) {
         trk.remove();
     }
 }
+
+function sendCode() {
+    const email = document.getElementById("email").value.trim();
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+        alert("請輸入有效的 Email");
+        return;
+    }
+
+    // 儲存 Email
+    localStorage.setItem("userEmail", email);
+
+    // 顯示登入碼區塊
+    document.getElementById("mailbox").classList.add("show");
+
+    document.querySelector(".mh").textContent =
+        `📩 示範模式：這封信會寄到 ${email}`;
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+    const email = localStorage.getItem("userEmail") || "訪客";
+    const count = document.querySelectorAll(".trkitem").length;
+
+    document.querySelector(".mail-name").textContent =
+        `${email}　共 ${count} 項`;
+});
+
