@@ -22,8 +22,7 @@ button:active,
 .btn:active,
 .trackbtn:active,
 .counterbtn:active,
-.sth:active,
-.ti:active{
+.sth:active{
     transform:scale(.97);
     opacity:.75;}
 
@@ -49,7 +48,7 @@ a{
   transform: translateX(-50%);
   color: $secondary;
   font-weight: 700;
-  font-size: 0.90625rem; // 14.5px / 16
+  font-size: $fs-md;
   letter-spacing: 0.05em;
 }
 
@@ -102,7 +101,7 @@ a{
 
  .sub-title {
     text-align: center;
-    font-size: 1.25rem;
+    font-size:$fs-2xl;
     font-weight: bold;
     color: $primary;
     align-items: center;
@@ -120,14 +119,14 @@ a{
     padding: 20px 0px 10px;
     position:relative;
       h1{
-      font-size:28px;
+      font-size: $fs-3xl;
       line-height:1.35;
       margin:0 0 14px;
       font-weight:900;
       color:var(--text-dark);
      }
       p{
-      font-size:13.5px;
+      font-size:$fs-sm;
       line-height:1.7;
       color:var(--text-mid);
       margin:0;
@@ -155,7 +154,7 @@ a{
     align-items: center;
     justify-content: space-between;
     padding: 0 22px;
-    font-size: 1rem; // 14px / 16
+    font-size: $fs-base; 
     font-weight: 700;
     color: #3a3a35;
     flex: none;
@@ -191,13 +190,13 @@ a{
     border-radius: 10px;
     width: 34px;
     height: 34px;
-    font-size: 1.09375rem; // 17.5px / 16
+    font-size:$fs-xl; 
     cursor: pointer;
     color: $primary;
   }
 
   .t {
-    font-size: 1.09375rem; // 17.5px / 16
+    font-size: $fs-xl;
     font-weight: 800;
     color: $primary;
   }
@@ -208,7 +207,7 @@ a{
 }
 
 .miniuser {
-  font-size: 0.8125rem; // 13px / 16
+  font-size: $fs-sm;
   font-weight: 700;
   color: $status-online-color;
   background: #e6f3df;
@@ -225,14 +224,14 @@ a{
   padding: 8px 2px 2px;
 
   .ey {
-    font-size: 0.8125rem; // 13px / 16
+    font-size: $fs-sm; 
     letter-spacing: 0.16em;
     color: $primary;
     font-weight: 800;
   }
 
   h1 {
-    font-size: 1.78125rem; // 28.5px / 16
+    font-size: $fs-4xl; 
     font-weight: 900;
     color: $dark;
     margin-top: 4px;
@@ -250,7 +249,7 @@ a{
   p {
     margin-top: 12px;
     color: $text-light;
-    font-size: 0.9375rem; // 15px / 16
+    font-size: $fs-md; 
   }
 }
 
@@ -302,13 +301,13 @@ a{
   }
 
   .nm {
-    font-size: 1.1rem; // 18.5px / 16
+    font-size: $fs-xl; 
     font-weight: 800;
     margin-top: 8px;
   }
 
   .ds {
-    font-size: 0.8125rem; // 13px / 16
+    font-size: $fs-sm; 
     color: $text-muted;
     margin-top: 3px;
   }
@@ -380,7 +379,7 @@ a{
   }
 
   .tx {
-    font-size: 1rem; // 14px / 16
+    font-size: 1rem; 
     color: $text-light;
     flex: 1;
   }
@@ -402,7 +401,7 @@ a{
   transform: translateX(-50%) translateY(20px);
   background: $dark;
   color: #fff;
-  font-size: 14.5px; // 14.5px / 16
+  font-size: $fs-md; 
   font-weight: 700;
   padding: 10px 18px;
   border-radius: 22px;
@@ -436,7 +435,7 @@ a{
     font-family: inherit;
     padding: 9px 0 12px;
     color: #9a9a90;
-    font-size: 1rem; // 12.5px / 16
+    font-size: $fs-base; 
     font-weight: 700;
     display: block;
     text-align: center;
@@ -466,7 +465,7 @@ a{
     cursor: pointer;
     list-style: none;
     padding: 11px 14px;
-    font-size: 0.9375rem; // 15px / 16
+    font-size: $fs-md; 
     font-weight: 800;
     color: $primary;
     background: #eef4fb;
@@ -491,14 +490,14 @@ a{
 }
 
 .cmp-face {
-  font-size: 0.9rem; // 13.5px / 16
+  font-size: $fs-md; 
   font-weight: 800;
   color: #555;
   margin-bottom: 3px;
 }
 
 .cmp-a, .cmp-b {
-  font-size: 1rem; // 14px / 16
+  font-size: $fs-base; 
   margin: 2px 0;
   line-height: 1.5;
 }
@@ -506,7 +505,7 @@ a{
 // 標籤樣式
 .tg {
   font-weight: 800;
-  font-size: 0.75rem; // 12px / 16
+  font-size: $fs-xs; 
   border-radius: 5px;
   padding: 1px 6px;
   margin-right: 6px;
@@ -523,7 +522,7 @@ a{
 }
 
 .cmn {
-  font-size: 0.8125rem; // 13px / 16
+  font-size: $fs-sm; 
   color: #8a6a3a;
   margin-top: 9px;
   background: #fff8e6;

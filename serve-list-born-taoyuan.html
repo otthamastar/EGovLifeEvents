@@ -22,16 +22,16 @@
       <div class="pad" id="app">
         <div class="flowtop">
           <div class="ev">孩子出生</div>
-          <div class="ct">新北市</div>
+          <div class="ct">桃園市</div>
         </div>
         <div class="ftools"><button class="expbtn" onclick="toggleAll(this)">展開全部</button></div>
         <div class="acc">
-<div class="st k-none common">
+            <div class="st k-none common">
             <button class="sth" onclick="this.parentNode.classList.toggle('open')"><span class="snum">1</span>
               <span class="stt"><span class="nm">取得新生兒出生證明</span></span><span class="chev">▶</span></button>
-             <button class="trackbtn " onclick="track(1)">＋ 加入我的辦理清單</button>
+              <button class="trackbtn " onclick="track(1)">＋ 加入我的辦理清單</button>
             <div class="stb">
-              <div>由接生的醫療院所開立（分娩之醫院／診所／助產所），是後續所有申辦的必要文件，請保存正本與影本。</div>
+              <div>由接生的醫療院所開立，是後續所有申辦的必要文件，請保存正本與影本。</div>
             </div>
           </div>
           <div class="st k-online central" id="birth-register">
@@ -331,17 +331,16 @@
           </div>
           <div class="st k-online central">
             <button class="sth" onclick="this.parentNode.classList.toggle('open')"><span class="snum">4</span>
-              <span class="stt"><span class="nm">新北市生育獎勵金</span></span><span class="chev">▶</span></button>
+              <span class="stt"><span class="nm">桃園市生育津貼</span></span><span class="chev">▶</span></button>
               <button class="trackbtn " onclick="track(3)">＋ 加入我的辦理清單</button>
             <div class="stb">
-              <div class="amount">第1胎4萬元<br>第2胎4.5萬元<br>第3胎以上5萬元（115年起））</div>
+              <div class="amount">第1名3萬元<br>第2名4萬元<br>第3名以上5萬元；多胞胎每名另加1萬元</div>
               <div class="rows">
-                <div class="r"><span class="k">資格</span><span>父或母出生前連續設籍滿10個月（可併計基北北桃），或出生後累計設籍滿10個月（不得併計）</span></div>
-                <div class="r"><span class="k">期限</span><span>出生後1年內</span></div>
+                <div class="r"><span class="k">資格</span><span>出生前連續設籍滿1年，或設籍滿10個月併計北北基滿1年（113年後出生），或出生前設籍且出生後連續設籍滿1年（114年後出生）。</span></div>
+                <div class="r"><span class="k">期限</span><span>出生後6個月內（第3款資格者為設籍滿1年後2個月內）</span></div>
               </div>
               <div class="chan on">
-                <div class="lbl">線上辦理</div>新北市政府線上申辦系統（進度查詢：<a  href="https://baby.ntpc.gov.tw/" target="_blank" rel="noopener">baby.ntpc.gov.tw</a>）（憑證：依系統指示（建議行動自然人憑證；官方頁未明列））<br>
-                <a class="btn" href="https://service.ntpc.gov.tw/eservice/CaseData.action?itemId=101054" target="_blank" rel="noopener">前往線上申辦 ↗</a>
+                <div class="lbl">線上辦理</div>桃園網路e指通（憑證：依系統指示（官方頁未明列具體驗證方式））<a  href="https://e-services.tycg.gov.tw/TycgOnline/tycgOnline.action?aid=AP03030000001266" target="_blank" rel="noopener">前往線上申辦 ↗</a>
               </div>
               <a class="counterbtn" onclick="toggleCounter(3,this)">
                 <p>我要臨櫃</p>
@@ -373,29 +372,36 @@
               </a>
             </div>
           </div>
-          <div class="st k-online central">
+           <div class="st k-online central">
             <button class="sth" onclick="this.parentNode.classList.toggle('open')"><span class="snum">6</span>
-              <span class="stt"><span class="nm">新北市到宅坐月子服務（符合資格者）</span></span><span class="chev">▶</span></button>
+              <span class="stt"><span class="nm">桃園市到宅坐月子服務（符合資格者）</span></span><span class="chev">▶</span></button>
               <button class="trackbtn " onclick="track(3)">＋ 加入我的辦理清單</button>
             <div class="stb">
               <div class="rows">
-                <div class="r"><span class="k">金額</span><span>弱勢家庭免費提供最高120小時坐月子到宅服務（價值約3萬6,000元）。單胞胎每小時300元計。</span></div>
-                <div class="r"><span class="k">資格</span><span>申請者為新生兒之母或父設籍並實際居住新北市，且為列冊(中)低收入戶、身障、特境、弱勢兒少家屬或新住民等弱勢家庭。</span></div>
-                <div class="r"><span class="k">期限</span><span>懷孕4個月至產前1個月。</span></div>
+                <div class="r"><span class="k">內容</span><span>弱勢家庭免費提供最高120小時坐月子到宅服務（價值約3萬6,000元）。單胞胎每小時300元計。</span></div>
+                <div class="r"><span class="k">資格</span><span>
+                 孕產婦本人或配偶為本市市民之新住民，且於分娩或流產當日已連續設籍本市滿 180 天以上<br>
+                 申請後至服務結束期間，仍需設籍並實際居住於本市。<br>
+                 具備低收入戶、中低收入戶、特殊境遇家庭或領有弱勢兒少生活扶助資格之家庭。<br>
+                 產婦或其配偶領有身心障礙證明者。<br>
+                 符合設籍前新住民社會救助補助核定資格者。<br>
+                 懷有或生育雙胞胎、三胞胎以上者。<br>
+                 經社工人員訪視評估確有需求者。</span></div>
+                <div class="r"><span class="k">期限</span><span>懷孕滿 16 週起至產後 1 個月內</span></div>
               </div>
               <div class="chan on">
-                <div class="lbl">線上辦理</div>無專屬線上申請系統，可至新北市政府福利補助自己查網站下載表單。 </div>
+                <div class="lbl">線上辦理</div>無。 </div>
               <a class="counterbtn" onclick="toggleCounter(3,this)">
                 <p>我要臨櫃</p>
               <div class="chan off" id="ct6" style="display:none">
-                親至新北市弱勢家庭坐月子到宅服務平臺(新北市淡水區馬偕街1號)辦理或郵寄<br>應備文件：申請表、孕婦手冊、全戶戶口名簿及弱勢身分證明文件。
+                免申辦。提交國民身分證、戶口名簿、孕產手冊或出生證明，以及相關福利身分證明文件。由平台媒合領有居家托育服務登記證書之專業月子服務員，與月子服務員約定每日服務時數（4 小時或 8 小時），並簽署正式契約。於產婦分娩日次日起二個月內，由服務員到宅提供專業照護。
               </div>
               </a>
             </div>
           </div>
-          <div class="st k-online central">
+          <!-- <div class="st k-online central">
             <button class="sth" onclick="this.parentNode.classList.toggle('open')"><span class="snum">7</span>
-              <span class="stt"><span class="nm">新北市產婦及嬰兒營養補助（符合資格者）</span></span><span class="chev">▶</span></button>
+              <span class="stt"><span class="nm">桃園市產婦及嬰兒營養補助（符合資格者）</span></span><span class="chev">▶</span></button>
               <button class="trackbtn " onclick="track(3)" >＋ 加入我的辦理清單</button>
             <div class="stb">
               <div class="rows">
@@ -414,9 +420,9 @@
               </div>
               </a>
             </div>
-          </div>
+          </div> -->
           <div class="st k-online central">
-            <button class="sth" onclick="this.parentNode.classList.toggle('open')"><span class="snum">8</span>
+            <button class="sth" onclick="this.parentNode.classList.toggle('open')"><span class="snum">7</span>
               <span class="stt"><span class="nm">育嬰留職停薪津貼及薪資補助（產假後申請）</span></span><span class="chev">▶</span></button>
               <button class="trackbtn " onclick="track(3)">＋ 加入我的辦理清單</button>
             <div class="stb">

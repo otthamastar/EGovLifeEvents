@@ -7,13 +7,13 @@ $primary: #12a2a8;
 $secondary: #a12b5e;
 $accent: #FFC000;
 $dark: #2b2b2b;
-$dark-text: #1a2533;       // 調深主文字，使其更有重量感
+$dark-text: #1a2533;      
 $text-muted: #424852;
 $text-light: #6b6b66;
 $top-bg:#fce3e1;
 $bottom-bg:#ffcdcd;
-$text-title: #0F172A;   // 極深石墨藍，更有權威與安全感
-$text-body: #475569;    // 溫和的中灰
+$text-title: #0F172A;   
+$text-body: #475569;  
 $primary-blue: #1E40AF;
 
 // 狀態色彩
@@ -25,7 +25,7 @@ $status-offline-color: #e0553d;
 $status-warning-bg: #fff3d6;
 $status-warning-color: #8a6a00;
 
-// 精緻化狀態色彩 (調低飽和度，加入果凍透明感底色)
+// 精緻化狀態色彩 
 $online-bg: rgba(240, 251, 253, 0.85);
 $online-border: rgba(74, 205, 222, 0.4);
 $online-text: #165365;
@@ -65,3 +65,15 @@ $font-stack: "微軟正黑體", "PingFang TC", Arial, sans-serif;
 	font: 0/0 a;
 	color: transparent;
 }
+
+// Font Size
+$fs-xxs: 0.6rem;  
+$fs-xs: 0.75rem;         
+$fs-sm: 0.8rem;       
+$fs-md: 0.9rem;       
+$fs-base: 1rem;                
+$fs-xl: 1.1rem;
+$fs-1xl: 1.2rem;          
+$fs-2xl: 1.25rem;        
+$fs-3xl: 1.75rem;       
+$fs-4xl: 1.78rem;     

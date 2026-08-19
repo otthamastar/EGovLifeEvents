@@ -127,6 +127,27 @@ function rmProg(event) {
     }
 }
 
+function renderTracker(){
+  const container = document.getElementById('trkContainer');
+  const p = getProg();
+
+  container.innerHTML = p.map(x => {
+    const [text, cls] = cycMap[x.status] || cycMap.todo;
+    return `<div class="trk" data-id="${x.id}">
+      <div class="trkitem">
+        <a href="${x.link || '#'}">
+          <div class="ctx">${x.ctxLabel || ''}</div>
+          <div class="ti">${x.title}</div>
+        </a>
+        <div class="bot">
+          <button class="stpill ${cls}" onclick="cycle(this)">${text}</button>
+          <button class="rm" onclick="rmProg(event, this)">移除</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
 function sendCode() {
     const email = document.getElementById("email").value.trim();
 

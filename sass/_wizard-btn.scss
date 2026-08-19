@@ -4,24 +4,23 @@
 // ==========================================
 .qwrap {
   margin-bottom: 15px;
-
 }
 
 .qstep {
-  font-size: 0.9rem; // 13.5px / 16
+  font-size: $fs-md;
   font-weight: 800;
   color: $primary;
   letter-spacing: 0.05em;
 }
 
 .qtitle {
-  font-size: 1.34375rem; // 21.5px / 16
+  font-size: $fs-2xl; 
   font-weight: 800;
   margin: 6px 0 8px;
 }
 
 .qsub {
-  font-size: 1rem; // 14px / 16
+  font-size: $fs-base; 
   color: $text-muted;
   margin-bottom: 14px;
 }
@@ -40,7 +39,7 @@
   border-radius: 11px;
   padding: 12px 4px;
   font-family: inherit;
-  font-size: 1rem; // 16px / 16
+  font-size: $fs-base;
   font-weight: 700;
   color: $dark;
   position: relative;
@@ -83,7 +82,7 @@
   border-radius: 13px;
   padding: 15px 16px;
   font-family: inherit;
-  font-size: 1.0625rem; // 17px / 16
+  font-size: $fs-base + 0.6rem; 
   font-weight: 700;
   color: $dark;
   display: flex;
@@ -95,7 +94,7 @@
   }
 
   .em {
-    font-size: 1.34375rem; // 21.5px / 16
+    font-size: $fs-base; 
   }
 }
 
@@ -118,7 +117,7 @@
   border-radius: 12px;
   padding: 14px;
   font-family: inherit;
-  font-size: 1.0625rem; // 17px / 16
+  font-size: $fs-base + 0.6rem; 
   font-weight: 800;
 
   &.primary {
@@ -129,7 +128,7 @@
   background: linear-gradient(135deg, #1E40AF 0%, #1D4ED8 100%);
   color: #ffffff;
   font-weight: 700;
-  font-size: 0.9375rem;
+  font-size: $fs-md;
   padding: 14px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);
