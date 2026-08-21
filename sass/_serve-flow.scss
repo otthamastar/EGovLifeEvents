@@ -24,7 +24,7 @@
   }
 
   .ev {
-    font-size: $fs-md;
+    font-size: 0.9rem; // 13px
     font-weight: 600;
     opacity: 0.8;
     letter-spacing: 0.05em;
@@ -32,7 +32,7 @@
   }
 
   .ct {
-    font-size: $fs-1xl + 0.4rem; 
+    font-size: 1.6rem; // 26px
     font-weight: 800;
     letter-spacing: 0.02em;
   }
@@ -40,7 +40,7 @@
 
 .olead {
   margin: 12px 0 2px;
-  font-size: $fs-base;
+  font-size: 1rem; // 14px / 16
   color: $status-online-color;
   font-weight: 800;
   display: flex;
@@ -61,7 +61,7 @@
   border: 1px solid rgba(30, 64, 175, 0.1);
   color: #1F497D;
   font-weight: 700;
-  font-size: $fs-md;
+  font-size: 0.9rem; // 13px
   border-radius: 20px;
   padding: 6px 16px;
   transition: all 0.2s ease;
@@ -72,14 +72,14 @@
 }
 
 .acclbl {
-  font-size: $fs-base;
+  font-size: 1rem; // 14px / 16
   color: $text-muted;
   font-weight: 700;
   margin-top: 6px;
 }
 
 .accmail {
-  font-size: $fs-2xl;
+  font-size: 1.28125rem; // 20.5px / 16
   font-weight: 800;
   color: $primary;
   background: #eef4fb;
@@ -162,7 +162,7 @@
   background: $primary;
   color: #fff;
   font-weight: 800;
-  font-size: $fs-base;
+  font-size: 1rem; // 15.5px / 16
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,13 +174,13 @@
   text-align: left;
 
   .nm {
-    font-size: $fs-xl;
+    font-size: 1.1rem;
     line-height: 1.5;
     font-weight: 500;
   }
 
   .hn {
-    font-size: $fs-sm; 
+    font-size: 0.8125rem; // 13px / 16
     margin-top: 2px;
   }
 }
@@ -189,7 +189,7 @@
   font-weight: 800;
   padding: 1px 7px;
   border-radius: 6px;
-  font-size: $fs-base; 
+  font-size: 1rem; 
 
   &.on {
     background: $status-online-bg;
@@ -212,7 +212,7 @@
 .stb {
   display: none;
   padding: 0 15px 15px;
-  font-size: $fs-md;
+  font-size: 0.9rem;
 }
 
 // 金額發光提示區
@@ -222,7 +222,7 @@
   border-radius: 12px;
   padding: 12px 15px;
   margin: 4px 0 14px;
-  font-size: $fs-md;
+  font-size: 0.9rem; // 15px
   font-weight: 600;
   color: $offline-text;
   line-height: 1.7;
@@ -249,7 +249,7 @@
 .chan {
   border-radius: 16px;
   padding: 10px 15px;
-  font-size: $fs-md;
+  font-size: 0.9rem; // 14px
   line-height: 1.7;
   
 
@@ -258,7 +258,7 @@
   }
 
   .lbl {
-    font-size: $fs-md;
+    font-size: 0.9rem; // 12px
     font-weight: 800;
     padding: 3px 8px;
     border-radius: 6px;
@@ -306,7 +306,7 @@
   color: #ffffff;
   text-decoration: none;
   font-weight: 700;
-  font-size: $fs-base;
+  font-size: 1rem; // 15px
   padding: 12px;
   border-radius: 12px;
   box-shadow: $shadow-button;
@@ -335,7 +335,7 @@
   border: 1px solid rgba(74, 205, 222, 0.4);
   color: $online-text;
   font-weight: 700;
-  font-size: $fs-base;
+  font-size: 1rem;
   border-radius: 12px;
   padding: 12px;
   transition: all 0.2s ease;
@@ -348,7 +348,7 @@
  // 1. 預設狀態：右側小箭頭朝下 (▶ 轉向右，再轉 90 度朝下)
   p:after {
     content: "▶"; 
-    font-size: $fs-xxs;
+    font-size: 0.6875rem; // 11px 稍微縮小更精緻
     display: inline-block;
     color: $online-text;
     transform: rotate(-90deg); // 轉向下方
@@ -384,7 +384,7 @@
   padding: 9px 11px;
 
   .l {
-    font-size: $fs-base;
+    font-size: 1rem; // 12.5px / 16
     font-weight: 800;
     color: $online-text;
     border-radius: 6px;
@@ -402,7 +402,7 @@
     cursor: pointer;
     list-style: none;
     gap: 8px;
-    font-size: $fs-base;
+    font-size: 0.95rem;
     
     // 隱藏 Safari 預設的箭頭
     &::-webkit-details-marker {
@@ -412,7 +412,7 @@
     // 預設狀態：向下的小箭頭 (🞃)
     &::after {
       content: "▶";         // 使用箭頭符號，並透過旋轉來變換方向
-      font-size: $fs-xxs;
+      font-size: 0.75rem;
       color: $text-light;
       transform: rotate(-90deg); // 轉向下方
       transition: transform 0.2s ease, color 0.2s ease;
@@ -431,12 +431,12 @@
     transform: rotate(90deg); // 轉向上方
   }
   .cm {
-    font-size: $fs-md;
+    font-size: 0.9rem; // 13.5px / 16
     margin-top: 2px;
   }
 
   .cd {
-    font-size: $fs-md;
+    font-size: 0.9rem; // 13.5px / 16
     color: $text-muted;
     margin-top: 2px;
 
@@ -490,13 +490,13 @@
     border: 1px dashed #bfe0b0;
     border-radius: 8px;
     padding: 5px 8px;
-    font-size: $fs-md;
+    font-size: 0.9rem; // 12.5px / 16
     color: $text-light;
   }
 
   .chn {
     display: inline-block;
-    font-size: $fs-xxs;
+    font-size: 0.6875rem; // 11px / 16
     font-weight: 800;
     border-radius: 6px;
     padding: 1px 6px;
@@ -530,7 +530,7 @@
   padding: 8px 12px;
 
   .l {
-    font-size: $fs-md;
+    font-size: 0.9rem; // 13px / 16
     font-weight: 800;
     color: $status-offline-color;
     margin-bottom: 2px;
@@ -544,7 +544,7 @@
   }
 
   li {
-    font-size: $fs-md;
+    font-size: 0.9rem; // 13.5px / 16
     color: #7a3b2f;
     margin: 2px 0;
   }
@@ -552,7 +552,7 @@
 
 .tip {
   margin-top: 8px;
-  font-size: $fs-md;
+  font-size: 0.9rem; // 13.5px / 16
   color: #7a6a3a;
   background: #fff8e6;
   border: 1px dashed #e6cf88;
@@ -568,9 +568,9 @@
   margin: 15px;
   margin-top: 0px;
   background: #fff;
-  border: 1px dotted #0e7a72;
-  color: #0e7a72;
-  font-size: $fs-base; 
+  border: 1px dotted $primary;
+  color: $primary;
+  font-size: 0.95rem; // 15px
   padding: 10px;
   border-radius: 10px; 
   transition: all 0.2s ease;
@@ -580,8 +580,62 @@
     transform: scale(0.98);
   }
   &.added{
-    background: #0e7a72;
-    border-color: #0e7a72;
+    background: $primary;
+    border-color: $primary;
     color: #fff;
   }
+}
+
+.skipbox {
+    margin-top: 16px;
+    background: $offline-bg;
+    border: 1px dashed $border-color;
+    border-radius: 14px;
+    padding: 12px 14px;
+
+    .h {
+    font-weight: 700;
+    margin-bottom: 6px;
+   }
+
+   ul {   
+     margin: 0;
+    padding-left: 1.5rem;
+    
+    li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;}
+  }
+
+}
+
+.chips{
+    display: flex;
+    flex-wrap: wrap;
+
+    ul{
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 15px 0 10px;
+      align-items: center;
+      
+      li{
+        background: #f1efe9;
+        border-radius: 999px;
+        padding: 4px 10px;
+        color: #6a6a60;
+        font-weight: 600;
+      }
+    }
+    .redo {
+    color: #0056b3;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px 10px;
+    font-family: inherit;
+    }
 }

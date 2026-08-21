@@ -4,23 +4,24 @@
 // ==========================================
 .qwrap {
   margin-bottom: 15px;
+
 }
 
 .qstep {
-  font-size: $fs-md;
+  font-size: 0.9rem; // 13.5px / 16
   font-weight: 800;
   color: $primary;
   letter-spacing: 0.05em;
 }
 
 .qtitle {
-  font-size: $fs-2xl; 
+  font-size: 1.34375rem; // 21.5px / 16
   font-weight: 800;
   margin: 6px 0 8px;
 }
 
 .qsub {
-  font-size: $fs-base; 
+  font-size: 1rem; // 14px / 16
   color: $text-muted;
   margin-bottom: 14px;
 }
@@ -29,6 +30,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 8px;
+
+  @media screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
 }
 
 .cbtn {
@@ -39,7 +44,7 @@
   border-radius: 11px;
   padding: 12px 4px;
   font-family: inherit;
-  font-size: $fs-base;
+  font-size: 1rem; // 16px / 16
   font-weight: 700;
   color: $dark;
   position: relative;
@@ -71,6 +76,9 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  @media screen and (min-width: 768px) {
+      flex-direction: inherit;
+  }
 }
 
 .obtn {
@@ -82,19 +90,24 @@
   border-radius: 13px;
   padding: 15px 16px;
   font-family: inherit;
-  font-size: $fs-base + 0.6rem; 
+  font-size: 1.0625rem; // 17px / 16
   font-weight: 700;
   color: $dark;
   display: flex;
   align-items: center;
   gap: 10px;
 
+   @media screen and (min-width: 768px) {
+      width:50%;
+      justify-content: center;
+  }
+
   &:active {
     transform: scale(0.98);
   }
 
   .em {
-    font-size: $fs-base; 
+    font-size: 1.34375rem; // 21.5px / 16
   }
 }
 
@@ -107,6 +120,7 @@
   margin-top: 16px;
   display: flex;
   gap: 10px;
+  @media screen and (min-width: 768px){justify-content: center;}
 }
 
 .pbtn {
@@ -117,8 +131,10 @@
   border-radius: 12px;
   padding: 14px;
   font-family: inherit;
-  font-size: $fs-base + 0.6rem; 
+  font-size: 1.0625rem; // 17px / 16
   font-weight: 800;
+
+  @media screen and (min-width: 768px){flex: inherit;}
 
   &.primary {
    appearance: none;
@@ -128,11 +144,13 @@
   background: linear-gradient(135deg, #1E40AF 0%, #1D4ED8 100%);
   color: #ffffff;
   font-weight: 700;
-  font-size: $fs-md;
+  font-size: 0.9375rem;
   padding: 14px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);
   transition: all 0.2s ease;
+
+   @media screen and (min-width: 768px){width: 30%;}
 
   &:hover {
     background: linear-gradient(135deg, #1D4ED8 0%, #1E40AF 100%);

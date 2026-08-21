@@ -15,12 +15,12 @@
   box-shadow: 0px 5px 10px #e5aeac;
 
   h2 {
-    font-size: $fs-1xl;
+    font-size: 1.2rem; // 20.5px / 16
     font-weight: 800;
   }
 
   p {
-    font-size: $fs-md;
+    font-size: 0.9rem; // 14px / 16
     color: $text-muted;
     margin: 5px 0px;
   }
@@ -34,7 +34,7 @@
   border: 1.5px solid #E2E8F0;
   border-radius: 12px;
   padding: 14px 16px;
-  font-size: $fs-md;
+  font-size: 0.9375rem;
   color: $text-title;
   font-weight: 500;
   transition: all 0.2s ease;
@@ -78,7 +78,7 @@
   padding: 13px 14px;
 
   .mh {
-    font-size: $fs-md; 
+    font-size: 0.9rem; // 13.5px / 16
     font-weight: 800;
     color: $primary-blue;
     display: flex;
@@ -95,7 +95,7 @@
 }
 
   .code {
-    font-size: $fs-xl; 
+    font-size: 1.96875rem; // 31.5px / 16
     font-weight: 900;
     letter-spacing: 8px;
     color: $primary-blue;
@@ -104,7 +104,7 @@
   }
 
   .lk {
-    font-size: $fs-base; 
+    font-size: 1rem; // 14px / 16
   }
 }
 
@@ -112,7 +112,7 @@
   display: block;
   text-align: center;
   margin-top: 12px;
-  font-size: $fs-base; 
+  font-size: 0.9rem; // 14px / 16
   color: $primary-blue;
   font-weight: 700;
   cursor: pointer;

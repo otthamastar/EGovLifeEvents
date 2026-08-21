@@ -18,13 +18,13 @@
   padding: 12px 14px;
 
   .ctx {
-    font-size: $fs-base;
+    font-size: 1rem; // 12.5px / 16
     color: $text-muted;
     font-weight: 700;
   }
 
   .ti {
-    font-size: $fs-base;
+    font-size: 1rem; // 16px / 16
     font-weight: 800;
     margin-top: 2px;
   }
@@ -43,7 +43,7 @@
   border: none;
   font-family: inherit;
   font-weight: 800;
-  font-size: $fs-md;
+  font-size: 0.9rem; // 13.5px / 16
   border-radius: 20px;
   padding: 5px 12px;
 }
@@ -57,7 +57,7 @@
   background: none;
   border: none;
   color: #c98;
-  font-size: $fs-md;
+  font-size: 0.9rem; // 13.5px / 16
   cursor: pointer;
   font-weight: 700;
 }
@@ -65,7 +65,7 @@
 .empty {
   text-align: center;
   color: $text-muted;
-  font-size: $fs-md;
+  font-size: 0.96875rem; // 15.5px / 16
   padding: 40px 16px;
   border: 1.5px dashed #e0d8ba;
   border-radius: 14px;
@@ -76,7 +76,7 @@
 
   // 使用者 Email 與統計資訊
   .mail-name {
-    font-size: $fs-md !important; // 15px
+    font-size: 0.9rem !important; // 15px
     font-weight: 700 !important;
     color: $text-title!important;
     margin-bottom: 6px !important;
@@ -87,7 +87,7 @@
     // 讓 Email 看起來像個精緻的帳號標籤
     &::after {
       content: "Tracker";
-      font-size: $fs-xxs;
+      font-size: 0.6875rem;
       background: rgba(30, 64, 175, 0.08);
       color: #1E40AF;
       padding: 2px 8px;
@@ -99,7 +99,7 @@
 
   // 💡 小提示區塊
   .mail-info{
-    font-size: $fs-md !important; // 13px
+    font-size: 0.9rem !important; // 13px
     color: $text-muted !important;
     background: #FFFBEB; // 改用溫馨的暖黃色提示底
     border: 1px solid #FEF3C7;
@@ -128,15 +128,15 @@
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.03), 0 2px 6px rgba(0, 0, 0, 0.01);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 
-  &:active {
-    transform: scale(0.99);
+  &:hover {
+    transform: scale(0.97);
   }
 
   // 「出生・臺北市」分類標籤
   .ctx {
-    font-size: $fs-md;
+    font-size: 0.9rem; // 12px
     font-weight: 800;
-    color: #0D9488; 
+    color: $primary; // 質感翠綠
     background: rgba(13, 148, 136, 0.06);
     padding: 4px 10px;
     border-radius: 20px;
@@ -146,7 +146,7 @@
 
   // 標題連結 (取得新生兒出生證明)
   .ti {
-    font-size: $fs-xl!important; 
+    font-size: 1.0625rem !important; // 17px 稍微放大更醒目
     font-weight: 700;
     color: $text-title !important;
     text-decoration: none !important; // 拔除生硬的底線
@@ -178,7 +178,7 @@
   cursor: pointer;
   border: 1px solid transparent;
   font-weight: 700;
-  font-size: $fs-md;
+  font-size: 0.9rem; // 13px
   padding: 8px 16px;
   border-radius: 30px; // 完美的膠囊造型
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
@@ -226,7 +226,7 @@
 
     &::before {
       content: "✓"; // 完成時變成勾勾
-      font-size: $fs-xs;
+      font-size: 0.75rem;
       font-weight: 900;
     }
   }
@@ -242,7 +242,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-size: $fs-md;
+  font-size: 0.9rem; // 13px
   font-weight: 700;
   color: #d53d3d; 
   padding: 8px 12px;
@@ -269,7 +269,7 @@
   cursor: pointer;
   width: 100%;
   text-align: center;
-  font-size: $fs-md;
+  font-size: 0.9rem; // 14px
   font-weight: 600;
   color: $text-muted;
   padding: 12px;
